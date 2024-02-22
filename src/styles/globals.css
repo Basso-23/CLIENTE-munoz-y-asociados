@@ -3,6 +3,89 @@
 @tailwind utilities;
 
 :root {
-  background-color: #ffffff;
-  color: #151515;
+  background-color: #f5f5f5;
+}
+
+.fixedCenterY {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.fixedCenterX {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.fixedCenterXnY {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@font-face {
+  font-family: outfit;
+  src: url(../../public/Outfit-VariableFont_wght.ttf);
+}
+
+.outfit {
+  font-family: outfit;
+}
+
+.columnas {
+  background-image: url(../assets/images/columnas.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: grayscale(100%);
+}
+
+.mapa {
+  background-image: url(../assets/images/mapa.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.biblioteca {
+  background-image: url(../assets/images/biblioteca.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.company {
+  background-image: url(../assets/images/company.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.firma {
+  background-image: url(../assets/images/firma.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.columnas2 {
+  background-image: url(../assets/images/columnas2.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  filter: grayscale(100%);
+}
+
+.logo {
+  background-image: url(../assets/images/logo.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.linea {
+  visibility: hidden;
+}
+
+.nav:hover .linea {
+  visibility: visible;
 }
