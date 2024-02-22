@@ -15,7 +15,7 @@ const Contacto = () => {
   return (
     <main className="  text-white mb-12 ">
       {/* Banner--------------------------------------------------------------------------------------------------------------------------------------------- */}
-      <section className=" w-full sm:h-[320px] h-[200px]  text-center columnas   ">
+      <section className=" w-full sm:h-[320px] h-[135px]  text-center columnas   ">
         <div className="  w-full h-full bg-[#000000b6] flex flex-col justify-center tracking-wide ">
           <h1 className=" sm:text-[75px] text-[30px] font-medium ">
             Contáctanos

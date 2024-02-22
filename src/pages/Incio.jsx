@@ -20,10 +20,10 @@ const Inicio = () => {
         <div className="flex justify-center text-[#d3b380] ">
           <Link
             href={"/Servicios"}
-            className="uppercase font-bold text-[12px] tracking-[3px] flex gap-[2px] cursor-pointer rounded-sm"
+            className="uppercase font-bold sm:text-[12px] text-[14px]  tracking-[3px] flex gap-[2px] cursor-pointer rounded-sm"
           >
             <div>Ver más</div>
-            <div className=" -mt-[1.5px]">
+            <div className=" sm:-mt-[1.5px] mt-[0x]">
               <Arrow />
             </div>
           </Link>
@@ -34,20 +34,20 @@ const Inicio = () => {
   return (
     <main className="  text-white">
       {/* Banner--------------------------------------------------------------------------------------------------------------------------------------------- */}
-      <section className=" w-full sm:h-[675px] h-[200px]  text-center biblioteca">
+      <section className=" w-full sm:h-[675px] h-[500px]  text-center biblioteca">
         <div className="  w-full h-full bg-[#17171797] flex flex-col justify-center tracking-wide  ">
-          <h2 className=" sm:text-[35px] text-[30px] text-[#B1976B] uppercase tracking-widest  font-light">
+          <h2 className=" md:text-[35px] text-[20px] text-[#B1976B] uppercase tracking-widest  font-light">
             Bienvenido a
           </h2>
-          <div className=" w-[100px] h-[1px] bg-[#B1976B] mx-auto"></div>
-          <h1 className="sm:text-[85px] text-[15px] uppercase font-bold tracking-wider">
+          <div className=" w-[100px] h-[1px] bg-[#B1976B] mx-auto  md:mb-0 mb-6"></div>
+          <h1 className="md:text-[85px] text-[38px] uppercase font-bold tracking-wider md:leading-normal leading-none md:mb-0 mb-2">
             Muñoz y Asociados
           </h1>
-          <h3 className=" text-[#d9d9d9] font-medium text-[20px] tracking-wide mt-2">
+          <h3 className=" text-[#d9d9d9] font-medium md:text-[24px] text-[16px] tracking-wide mt-2">
             Somos una firma legal líder en la industria financiera y
             empresarial.
           </h3>
-          <h3 className=" text-[#d9d9d9] font-medium text-[20px] tracking-wide mt-1">
+          <h3 className=" text-[#d9d9d9] font-medium md:text-[24px] text-[16px] tracking-wide mt-1">
             Con más de 30 años de experiencia.
           </h3>
           {/* Boton */}
@@ -66,9 +66,9 @@ const Inicio = () => {
       </section>
       {/* Sobre nosotros--------------------------------------------------------------------------------------------------------------------------------------------- */}
       <section className=" max-w-[1250px] mx-auto sm:px-10 px-5 ">
-        <div className=" w-full h-[440px] bg-white -mt-16 rounded-lg shadow-xl flex overflow-hidden ">
-          <div className=" w-[50%]  h-full flex ">
-            <div className=" my-auto px-14 flex flex-col">
+        <div className=" w-full md:h-[440px] h-[420px] bg-white md:-mt-16 -mt-10  rounded-lg shadow-xl flex overflow-hidden ">
+          <div className=" md:w-[50%] w-full  h-full flex ">
+            <div className=" my-auto md:px-14 px-6 flex flex-col">
               {/* Titulo */}
               <div className=" uppercase text-[#161616] font-bold tracking-wider">
                 Sobre nosotros
@@ -88,7 +88,7 @@ const Inicio = () => {
             </div>
           </div>
           {/* Image */}
-          <div className=" w-[50%] company h-full"></div>
+          <div className=" w-[50%] company h-full md:flex hidden"></div>
         </div>
       </section>
 
@@ -104,7 +104,7 @@ const Inicio = () => {
         </h1>
         <div className=" w-[1px] h-[35px] bg-[#e1c088] mx-auto my-4"></div>
         {/* Servicios container */}
-        <div className=" grid grid-cols-3 text-[#474747] mt-12 gap-x-10 gap-y-20">
+        <div className=" grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 text-[#474747] mt-12 gap-x-10 gap-y-20">
           <Servicio
             titulo="SERVICIOS LEGALES"
             subtitulo="Asesoramiento legal hasta representación en litigios, proporcionamos soluciones efectivas y estratégicas para tus asuntos legales."
@@ -141,11 +141,11 @@ const Inicio = () => {
       </section>
 
       {/* Porque nosotros--------------------------------------------------------------------------------------------------------------------------------------------- */}
-      <section className=" w-full sm:h-[675px] h-[200px]  text-center relative mt-[115px]">
+      <section className=" w-full md:h-[675px] sm:h-[850px] max-h-[1000px]  h-[280vw]  text-center relative mt-[115px]">
         <div className=" absolute w-full h-full bg-[#171717b2] z-40"></div>
         <div className=" absolute w-full h-full columnas2 z-30 "></div>
         {/* Container */}
-        <div className="  w-[98%] h-[88%] border-[1px] border-[#696969] flex flex-col justify-center tracking-wide absolute z-50 fixedCenterXnY ">
+        <div className="  md:w-[98%] md:h-[88%] w-[95%] h-[95%]  border-[1px] border-[#696969] flex flex-col justify-center tracking-wide absolute z-40 fixedCenterXnY px-5">
           {/* Subtitulo */}
           <h2 className=" uppercase tracking-[3px] text-[#d3b380] font-bold text-[14px]">
             Razones para elegirnos
@@ -156,14 +156,14 @@ const Inicio = () => {
           </h1>
           <div className=" w-[1px] h-[35px] bg-[#e1c088] mx-auto my-4"></div>
           {/* Parrafos */}
-          <div className=" flex justify-center text-start gap-12">
+          <div className="md:flex justify-center text-start gap-12">
             {/* Parrafo */}
-            <div className="w-[500px] text-[18px] text-[#bababa]  mt-8 font-light">
+            <div className="md:w-[500px] w-full text-[18px] text-[#bababa]  sm:mt-8 font-light md:text-start text-center">
               Far far away, behind the word mountains, far from the countries
               Vokalia and Consonantia, there live the blind texts. Separated
               they live in Bookm arksgrove right at the coast of the Semantics,
               a large language ocean. A small river named
-              <div className=" flex flex-col items-center  mt-10">
+              <div className=" flex flex-col items-center  sm:mt-10 mt-4">
                 <div className=" font-bold text-white  text-[50px]">100%</div>
 
                 <div className=" font-light text-[#d3b380] ">
@@ -173,12 +173,12 @@ const Inicio = () => {
             </div>
 
             {/* Parrafo */}
-            <div className="w-[500px] text-[18px] text-[#bababa]  mt-8 font-light">
+            <div className="md:w-[500px] w-full text-[18px] text-[#bababa]  mt-8 font-light md:text-start text-center">
               A wonderful serenity has taken possession of my entire soul, like
               these sweet mornings of spring which I enjoy with my whole heart.
               I am alone, and feel the charm of existence in this spot, which
               was created for the bliss of souls like mine.
-              <div className=" flex flex-col items-center mt-10">
+              <div className=" flex flex-col items-center sm:mt-10 mt-4">
                 <div className=" font-bold text-white  text-[50px]">30+</div>
 
                 <div className=" font-light text-[#d3b380] ">
