@@ -62,7 +62,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        {/* Lista--------------------------------------------------------------------------------------------------------------------------------------------- */}
+        {/* Navbar--------------------------------------------------------------------------------------------------------------------------------------------- */}
         <div className=" xl:flex hidden gap-8 my-auto tracking-wide uppercase text-[14px]">
           <Nav name="Inicio" url="/" />
           <Nav name="Nosotros" url="/Nosotros" />
@@ -70,15 +70,17 @@ const Navbar = () => {
           <Nav name="Logros" url="/Logros" />
           <Nav name="Contacto" url="/Contacto" />
         </div>
-        {/* Menu--------------------------------------------------------------------------------------------------------------------------------------------- */}
+        {/* Menu container--------------------------------------------------------------------------------------------------------------------------------------------- */}
         <div
           onClick={() => {
             setIsOpen(!isOpen);
           }}
           className=" my-auto xl:hidden flex border-2 rounded-[3px] h-[35px] w-[35px]  justify-center items-center border-black cursor-pointer"
         >
+          {/* Icono */}
           <MenuIcon />
         </div>
+        {/* Barra lateral */}
         <AnimatePresence>
           {isOpen ? (
             <div className=" w-screen h-screen absolute bg-[#000000b6] top-0 left-0 z-50 xl:hidden">
@@ -86,7 +88,7 @@ const Navbar = () => {
                 initial={{ x: 300 }}
                 animate={{ x: 0 }}
                 transition={{
-                  duration: 0.5,
+                  duration: 0.35,
                   delay: 0,
                 }}
                 exit={{ x: 300 }}
