@@ -8,8 +8,8 @@ const MenuIcon = () => {
         viewBox="0 0 24 24"
         strokeLinecap="round"
         strokeLinejoin="round"
-        height="25px"
-        width="25px"
+        height="20px"
+        width="20px"
         xmlns="http://www.w3.org/2000/svg"
       >
         <line x1="4" x2="20" y1="12" y2="12"></line>

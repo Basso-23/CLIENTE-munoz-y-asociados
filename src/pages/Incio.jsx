@@ -43,11 +43,11 @@ const Inicio = () => {
           <h1 className="md:text-[85px] text-[38px] uppercase font-bold tracking-wider md:leading-normal leading-none md:mb-0 mb-2">
             Muñoz y Asociados
           </h1>
-          <h3 className=" text-[#d9d9d9] font-medium md:text-[24px] text-[16px] tracking-wide mt-2">
+          <h3 className=" text-[#d9d9d9] font-medium md:text-[22px] text-[16px] tracking-wide mt-2">
             Somos una firma legal líder en la industria financiera y
             empresarial.
           </h3>
-          <h3 className=" text-[#d9d9d9] font-medium md:text-[24px] text-[16px] tracking-wide mt-1">
+          <h3 className=" text-[#d9d9d9] font-medium md:text-[22px] text-[16px] tracking-wide mt-1">
             Con más de 30 años de experiencia.
           </h3>
           {/* Boton */}

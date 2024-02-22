@@ -1,8 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
 import MenuIcon from "@/assets/icons/MenuIcon";
-
+import { motion as m, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import X from "@/assets/icons/X";
+import Arrow2 from "@/assets/icons/Arrow2";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,11 +14,10 @@ const Navbar = () => {
     return (
       <div className=" relative nav font-light">
         <Link
-          className={
-            pathname === url
-              ? " "
-              : " text-[#616161] hover:text-black transition-all"
-          }
+          onClick={() => {
+            setIsOpen(false);
+          }}
+          className={pathname === url ? " " : " text-[#616161] transition-all"}
           href={url}
         >
           {name}
@@ -31,8 +32,23 @@ const Navbar = () => {
       </div>
     );
   };
+
+  const Nav_Mobile = ({ name, url }) => {
+    return (
+      <Link
+        href={url}
+        onClick={() => {
+          setIsOpen(false);
+        }}
+        className="  font-bold border-b border-[#4c4c4c] w-[80%] mx-auto py-6 text-[#8e8e8e] justify-between flex tracking-wide"
+      >
+        <div>{name}</div>
+        <Arrow2 />
+      </Link>
+    );
+  };
   return (
-    <main className="flex items-center bg-white h-[80px] fixed z-50 w-full">
+    <main className="flex items-center bg-white h-[80px] fixed z-50 w-full shadow-md">
       <section className="flex max-w-[1250px] w-full mx-auto sm:px-10 px-5 py-2 justify-between ">
         {/* Nombre y logo--------------------------------------------------------------------------------------------------------------------------------------------- */}
         <div className=" flex  my-auto gap-2 uppercase">
@@ -59,16 +75,42 @@ const Navbar = () => {
           onClick={() => {
             setIsOpen(!isOpen);
           }}
-          className=" my-auto xl:hidden flex border-2 rounded-[3px] h-[40px] w-[40px]  justify-center items-center border-black"
+          className=" my-auto xl:hidden flex border-2 rounded-[3px] h-[35px] w-[35px]  justify-center items-center border-black cursor-pointer"
         >
           <MenuIcon />
         </div>
-
-        {isOpen ? (
-          <div className="w-[400px] h-screen bg-black absolute right-0">
-            ingles
-          </div>
-        ) : null}
+        <AnimatePresence>
+          {isOpen ? (
+            <div className=" w-screen h-screen absolute bg-[#000000b6] top-0 left-0 z-50 xl:hidden">
+              <m.div
+                initial={{ x: 300 }}
+                animate={{ x: 0 }}
+                transition={{
+                  duration: 0.5,
+                  delay: 0,
+                }}
+                exit={{ x: 300 }}
+                className="w-[300px] h-screen bg-[#1F1F1F] absolute right-0 top-0 text-white z-40 flex flex-col "
+              >
+                <div
+                  className=" cursor-pointer absolute top-8 left-5 text-2xl font-bold text-white"
+                  onClick={() => {
+                    setIsOpen(!isOpen);
+                  }}
+                >
+                  <X />
+                </div>
+                <div className=" mx-auto mt-32 text-[14px] flex flex-col w-full uppercase">
+                  <Nav_Mobile name="Inicio" url="/" />
+                  <Nav_Mobile name="Nosotros" url="/Nosotros" />
+                  <Nav_Mobile name="Servicios" url="/Servicios" />
+                  <Nav_Mobile name="Logros" url="/Logros" />
+                  <Nav_Mobile name="Contacto" url="/Contacto" />
+                </div>
+              </m.div>
+            </div>
+          ) : null}
+        </AnimatePresence>
       </section>
     </main>
   );
