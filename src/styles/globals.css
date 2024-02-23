@@ -46,6 +46,13 @@
   background-position: center;
 }
 
+.law {
+  background-image: url(../assets/images/law.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .biblioteca {
   background-image: url(../assets/images/biblioteca.webp);
   background-size: cover;
@@ -58,6 +65,13 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.office {
+  background-image: url(../assets/images/office.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
 }
 
 .firma {
@@ -73,6 +87,21 @@
   background-repeat: no-repeat;
   background-position: bottom;
   filter: grayscale(100%);
+}
+
+.pluma {
+  background-image: url(../assets/images/pluma.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: grayscale(100%);
+}
+
+.columnas3 {
+  background-image: url(../assets/images/columnas3.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
 }
 
 .logo {

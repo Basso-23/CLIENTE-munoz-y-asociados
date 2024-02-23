@@ -41,7 +41,7 @@ const Inicio = () => {
           </h2>
           <div className=" w-[100px] h-[1px] bg-[#B1976B] mx-auto  md:mb-0 mb-6"></div>
           <h1 className="md:text-[85px] text-[38px] uppercase font-bold tracking-wider md:leading-normal leading-none md:mb-0 mb-2">
-            Muñoz y Asociados
+            Muñoz & Asociados
           </h1>
           <h3 className=" text-[#d9d9d9] font-medium md:text-[22px] text-[16px] tracking-wide mt-2">
             Somos una firma legal líder en la industria financiera y
@@ -83,7 +83,7 @@ const Inicio = () => {
               </h2>
               <div className="w-[210px] h-[100px] firma mt-2"></div>
               <div className=" uppercase font-light text-[#474747] text-[13px] mt-2 tracking-[4px]">
-                Muñoz y Asociados
+                Muñoz & Asociados
               </div>
             </div>
           </div>
@@ -143,6 +143,7 @@ const Inicio = () => {
       {/* Porque nosotros--------------------------------------------------------------------------------------------------------------------------------------------- */}
       <section className=" w-full md:h-[675px] sm:h-[850px] max-h-[1000px]  h-[280vw]  text-center relative mt-[115px]">
         <div className=" absolute w-full h-full bg-[#171717b2] z-40"></div>
+        {/* Imagen */}
         <div className=" absolute w-full h-full columnas2 z-30 "></div>
         {/* Container */}
         <div className="  md:w-[98%] md:h-[88%] w-[95%] h-[95%]  border-[1px] border-[#696969] flex flex-col justify-center tracking-wide absolute z-40 fixedCenterXnY px-5">

@@ -15,11 +15,9 @@ const Contacto = () => {
   return (
     <main className="  text-white mb-12 ">
       {/* Banner--------------------------------------------------------------------------------------------------------------------------------------------- */}
-      <section className=" w-full sm:h-[320px] h-[135px]  text-center columnas   ">
-        <div className="  w-full h-full bg-[#000000b6] flex flex-col justify-center tracking-wide ">
-          <h1 className=" sm:text-[75px] text-[30px] font-medium ">
-            Contáctanos
-          </h1>
+      <section className=" w-full sm:h-[400px] h-[140px]  text-center columnas hidden">
+        <div className="  w-full h-full bg-[#000000b6] flex flex-col justify-center tracking-wider font-bold  uppercase ">
+          <h1 className=" sm:text-[60px] text-[30px] ">Contáctanos</h1>
         </div>
       </section>
       {/* Content--------------------------------------------------------------------------------------------------------------------------------------------- */}
@@ -27,7 +25,7 @@ const Contacto = () => {
         {/* Form container */}
         <div className=" xl:w-[58%] w-full  font-light ">
           {/* Titulo */}
-          <h1 className="sm:text-[32px] text-[28px] text-[#161616] font-semibold mb-6">
+          <h1 className="sm:text-[32px] text-[28px] text-[#161616] font-bold mb-6">
             Déjanos tu información
           </h1>
           {/* Subtitulo */}
@@ -83,7 +81,7 @@ const Contacto = () => {
             Mapa
           </h1>
           {/* Imagen */}
-          <div className=" cursor-pointer mapa w-full h-[400px]"></div>
+          <div className=" cursor-pointer mapa w-full sm:h-[400px] h-[300px]"></div>
         </div>
       </section>
     </main>
