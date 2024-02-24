@@ -23,7 +23,7 @@ const Nosotros = () => {
       {/* Banner--------------------------------------------------------------------------------------------------------------------------------------------- */}
       <section className=" w-full sm:h-[400px] h-[140px]  text-center columnas3">
         <div className="  w-full h-full bg-[#0000009d] flex flex-col justify-center tracking-wider uppercase  ">
-          <h1 className=" lg:text-[65px] sm:text-[40px] text-[25px] normal-case tracking-[1px] poppins-semibold poppins-bold   ">
+          <h1 className=" lg:text-[65px] sm:text-[40px] text-[35px] normal-case tracking-[1px] poppins-semibold poppins-bold   ">
             Nosotros
           </h1>
           <h1 className=" sm:text-[15px]  text-[12px] text-[#d0d0d0]  tracking-[2px] ">
