@@ -8,9 +8,13 @@ const Nosotros = () => {
       <div className="w-full flex flex-col items-center gap-4 max-w-[400px] ">
         <div className="text-[#c49c5d] mb-2">{icon}</div>
         {/* Titulo */}
-        <h1 className=" font-semibold tracking-[3px] text-[18px]">{titulo}</h1>
+        <h1 className=" poppins-semibold tracking-[3px] text-[16px]">
+          {titulo}
+        </h1>
         {/* Subtitulo */}
-        <h2 className="text-[18px] text-[#bababa] font-light">{subtitulo}</h2>
+        <h2 className="text-[16px] text-[#bababa] poppins-light">
+          {subtitulo}
+        </h2>
       </div>
     );
   };
@@ -18,11 +22,11 @@ const Nosotros = () => {
     <main className="  text-white ">
       {/* Banner--------------------------------------------------------------------------------------------------------------------------------------------- */}
       <section className=" w-full sm:h-[400px] h-[140px]  text-center columnas3">
-        <div className="  w-full h-full bg-[#0000009d] flex flex-col justify-center tracking-wider uppercase font-bold  ">
-          <h1 className=" lg:text-[60px] sm:text-[40px] text-[25px] ">
+        <div className="  w-full h-full bg-[#0000009d] flex flex-col justify-center tracking-wider uppercase  ">
+          <h1 className=" lg:text-[65px] sm:text-[40px] text-[25px] normal-case tracking-[1px] poppins-semibold poppins-bold   ">
             Nosotros
           </h1>
-          <h1 className=" sm:text-[15px]  text-[12px] text-[#d0d0d0]  tracking-[2px] font-light">
+          <h1 className=" sm:text-[15px]  text-[12px] text-[#d0d0d0]  tracking-[2px] ">
             La historia de nuestra empresa
           </h1>
         </div>
@@ -40,29 +44,29 @@ const Nosotros = () => {
               <div className=" md:px-14 sm:px-6 flex flex-col">
                 <div className=" w-[40px] h-[4px] bg-[#b1976b] mb-7"></div>
                 {/* Titulo */}
-                <div className=" uppercase text-[#959595] font-bold tracking-[3px]">
+                <div className=" uppercase text-[#959595] poppins-bold tracking-[3px] poppins-bold">
                   Muñoz & Asociados
                 </div>
-                <div className="  text-[#202020] font-bold tracking-wide sm:text-[50px] text-[45px] leading-none mt-3">
+                <div className="  text-[#202020] poppins-bold tracking-wide sm:text-[45px] text-[45px] leading-none mt-3 poppins-bold">
                   Nuestra Grandiosa Historia
                 </div>
 
                 {/* Subtitulo */}
-                <h2 className="text-[18px] text-[#474747]  mt-8 font-light">
+                <h2 className="text-[16px] text-[#474747]  mt-8 poppins-light">
                   Asesoramos a clientes de forma integral de acuerdo con sus
                   necesidades. Actualmente ofrecemos servicios de auditoría,
                   contables, legales, y de outsorcing, bajo altos estandares de
                   calidad.
                 </h2>
                 {/* Subtitulo */}
-                <h2 className="text-[18px] text-[#474747]  mt-8 font-light">
+                <h2 className="text-[16px] text-[#474747]  mt-8 poppins-light">
                   Asesoramos a clientes de forma integral de acuerdo con sus
                   necesidades. Actualmente ofrecemos servicios de auditoría,
                   contables, legales, y de outsorcing, bajo altos estandares de
                   calidad.
                 </h2>
                 <div className="w-[210px] h-[100px] firma mt-2"></div>
-                <div className=" uppercase font-light text-[#474747] text-[13px] mt-2 tracking-[4px]">
+                <div className=" uppercase poppins-light text-[#474747] text-[13px] mt-2 tracking-[4px]">
                   Muñoz & Asociados
                 </div>
               </div>

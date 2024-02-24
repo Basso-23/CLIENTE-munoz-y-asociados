@@ -23,12 +23,30 @@
 }
 
 @font-face {
-  font-family: outfit;
-  src: url(../../public/Outfit-VariableFont_wght.ttf);
+  font-family: poppins-bold;
+  src: url(../../public/Poppins-Bold.ttf);
 }
 
-.outfit {
-  font-family: outfit;
+.poppins-bold {
+  font-family: poppins-bold;
+}
+
+@font-face {
+  font-family: poppins-semibold;
+  src: url(../../public/Poppins-SemiBold.ttf);
+}
+
+.poppins-semibold {
+  font-family: poppins-semibold;
+}
+
+@font-face {
+  font-family: poppins-light;
+  src: url(../../public/Poppins-Light.ttf);
+}
+
+.poppins-light {
+  font-family: poppins-light;
 }
 
 .columnas {

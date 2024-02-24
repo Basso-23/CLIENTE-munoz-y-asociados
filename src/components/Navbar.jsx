@@ -12,7 +12,7 @@ const Navbar = () => {
 
   const Nav = ({ name, url }) => {
     return (
-      <div className=" relative nav font-light">
+      <div className=" relative nav poppins-light">
         <Link
           onClick={() => {
             setIsOpen(false);
@@ -40,7 +40,7 @@ const Navbar = () => {
         onClick={() => {
           setIsOpen(false);
         }}
-        className="  font-bold border-b border-[#4c4c4c] w-[80%] mx-auto py-6 text-[#8e8e8e] justify-between flex tracking-wide"
+        className="  poppins-bold border-b border-[#4c4c4c] w-[80%] mx-auto py-6 text-[#8e8e8e] justify-between flex tracking-wide"
       >
         <div>{name}</div>
         <Arrow2 />
@@ -56,8 +56,10 @@ const Navbar = () => {
           <div className="logo w-20 h-16"></div>
           {/* Nombre */}
           <div className=" my-auto pt-2 leading-[18px]">
-            <div className=" font-bold tracking-wide">Muñoz & Asociados </div>
-            <div className=" font-light text-[12px] tracking-wider">
+            <div className=" poppins-bold tracking-wide">
+              Muñoz & Asociados{" "}
+            </div>
+            <div className=" poppins-light text-[12px] tracking-wider">
               Firma Legal
             </div>
           </div>
@@ -95,7 +97,7 @@ const Navbar = () => {
                 className="w-[300px] h-screen bg-[#1F1F1F] absolute right-0 top-0 text-white z-40 flex flex-col "
               >
                 <div
-                  className=" cursor-pointer absolute top-8 left-5 text-2xl font-bold text-white"
+                  className=" cursor-pointer absolute top-8 left-5 text-2xl poppins-bold text-white"
                   onClick={() => {
                     setIsOpen(!isOpen);
                   }}

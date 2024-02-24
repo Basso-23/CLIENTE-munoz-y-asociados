@@ -16,20 +16,20 @@ const Contacto = () => {
     <main className="  text-white mb-12 ">
       {/* Banner--------------------------------------------------------------------------------------------------------------------------------------------- */}
       <section className=" w-full sm:h-[400px] h-[140px]  text-center columnas hidden">
-        <div className="  w-full h-full bg-[#000000b6] flex flex-col justify-center tracking-wider font-bold  uppercase ">
+        <div className="  w-full h-full bg-[#000000b6] flex flex-col justify-center tracking-wider poppins-bold  uppercase ">
           <h1 className=" sm:text-[60px] text-[30px] ">Contáctanos</h1>
         </div>
       </section>
       {/* Content--------------------------------------------------------------------------------------------------------------------------------------------- */}
       <section className=" max-w-[1250px] mx-auto flex flex-wrap sm:mt-20 mt-12 sm:gap-20 gap-12 justify-center sm:px-10 px-5 ">
         {/* Form container */}
-        <div className=" xl:w-[58%] w-full  font-light ">
+        <div className=" xl:w-[58%] w-full  poppins-light ">
           {/* Titulo */}
-          <h1 className="sm:text-[32px] text-[28px] text-[#161616] font-bold mb-6">
+          <h1 className="sm:text-[32px] text-[28px] text-[#161616] poppins-bold mb-6">
             Déjanos tu información
           </h1>
           {/* Subtitulo */}
-          <h2 className="text-[18px] text-[#474747]  sm:mb-14 mb-10">
+          <h2 className="text-[16px] text-[#474747]  sm:mb-14 mb-10">
             ¡Nos encantaría saber más sobre ti! Por favor, completa el siguiente
             formulario para que podamos ponernos en contacto contigo, brindarte
             la mejor atención y responder todas tus preguntas.
@@ -48,15 +48,15 @@ const Contacto = () => {
             />
             <input
               value="Enviar"
-              className="w-full bg-[#B1976B] py-3 px-6 text-white text-[16px] outline-none tracking-wide cursor-pointer"
+              className="w-full bg-[#B1976B] py-3 px-6 text-white text-[16px] outline-none tracking-widest cursor-pointer poppins-semibold"
               type="submit"
             />
           </form>
         </div>
         {/* Mapa container */}
-        <div className="xl:w-[35%] w-full font-light  ">
+        <div className="xl:w-[35%] w-full poppins-light  ">
           {/* Titulo */}
-          <h1 className="sm:text-[32px] text-[28px] text-[#161616] font-semibold mb-6">
+          <h1 className="sm:text-[32px] text-[28px] text-[#161616] poppins-bold mb-6">
             Ubicación
           </h1>
           {/* Subtitulo */}
@@ -77,7 +77,7 @@ const Contacto = () => {
             </div>
           </h2>
           {/* Titulo */}
-          <h1 className="sm:text-[32px] text-[28px] text-[#161616] font-semibold mb-6">
+          <h1 className="sm:text-[32px] text-[28px] text-[#161616] poppins-bold mb-6">
             Mapa
           </h1>
           {/* Imagen */}
