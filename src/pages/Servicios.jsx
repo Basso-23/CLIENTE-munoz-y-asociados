@@ -2,8 +2,25 @@ import Arrow from "@/assets/icons/Arrow";
 import Arrow3 from "@/assets/icons/Arrow3";
 import React, { useState, useEffect, useRef } from "react";
 import { Link as LinkDiv, animateScroll as scroll } from "react-scroll";
+import { servicios } from "@/assets/json/servicios";
+
 const Servicios = () => {
   const [isActive, setIsActive] = useState("Auditorías");
+  const [filtered, setFiltered] = useState(servicios);
+
+  useEffect(() => {
+    var filtered = servicios.filter(function (atribute) {
+      return atribute.title == "Auditorías";
+    });
+    setFiltered(filtered);
+  }, []);
+
+  const filterProject = (item) => {
+    var filtered = servicios.filter(function (atribute) {
+      return atribute.title == item;
+    });
+    setFiltered(filtered);
+  };
 
   const Opcion = ({ name, isActive, setIsActive }) => {
     return (
@@ -11,11 +28,16 @@ const Servicios = () => {
         to="info"
         smooth={true}
         duration={700}
-        offset={-90}
+        offset={-100}
         onClick={() => {
           setIsActive(name);
+          filterProject(name);
         }}
-        className="text-[16px] poppins-semibold tracking-wide w-full "
+        className={
+          isActive === name
+            ? "ptext-[16px] poppins-semibold tracking-wide w-full pointer-events-none"
+            : "text-[16px] poppins-semibold tracking-wide w-full"
+        }
       >
         <div
           className={
@@ -48,6 +70,7 @@ const Servicios = () => {
           </h1>
         </div>
       </section>
+
       {/* Content--------------------------------------------------------------------------------------------------------------------------------------------- */}
       <section className="xl:flex gap-10  max-w-[1400px] mx-auto sm:px-10 px-5 sm:mt-16 mt-12 ">
         <div className=" xl:w-[365px] w-full xl:flex xl:flex-col grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 xl:justify-start justify-center gap-5">
@@ -97,10 +120,18 @@ const Servicios = () => {
             setIsActive={setIsActive}
           />
         </div>
-        <div
-          name="info"
-          className=" xl:w-[885px]  w-full h-96 bg-red-300"
-        ></div>
+
+        <div name="info" className=" xl:w-[885px]  w-full xl:mt-0 mt-12">
+          {filtered.map((item) => (
+            <div key={item.id} className="flex flex-col gap-10">
+              {item.contenido.map((item, index) => (
+                <div key={index}>
+                  <div className=" ">{item.info}</div>
+                </div>
+              ))}
+            </div>
+          ))}
+        </div>
         <div className=" h-screen"></div>
       </section>
     </main>
