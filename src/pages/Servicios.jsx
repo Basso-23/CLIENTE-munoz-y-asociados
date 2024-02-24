@@ -77,7 +77,7 @@ const Servicios = () => {
             setIsActive={setIsActive}
           />
           <Opcion
-            name={"Prevencion de Lavado de Activos"}
+            name={"Prevención de Lavado de Activos"}
             isActive={isActive}
             setIsActive={setIsActive}
           />
