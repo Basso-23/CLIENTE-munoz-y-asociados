@@ -21,7 +21,7 @@ const Contacto = () => {
         </div>
       </section>
       {/* Content--------------------------------------------------------------------------------------------------------------------------------------------- */}
-      <section className=" max-w-[1250px] mx-auto flex flex-wrap sm:mt-20 mt-12 sm:gap-20 gap-12 justify-center sm:px-10 px-5 ">
+      <section className=" max-w-[1250px] mx-auto flex flex-wrap sm:mt-20 mt-10 sm:gap-20 gap-12 justify-center sm:px-10 px-5 ">
         {/* Form container */}
         <div className=" xl:w-[58%] w-full  poppins-light ">
           {/* Titulo */}
@@ -48,7 +48,7 @@ const Contacto = () => {
             />
             <input
               value="Enviar"
-              className="w-full bg-[#B1976B] py-3 px-6 text-white text-[16px] outline-none tracking-widest cursor-pointer poppins-semibold"
+              className="w-full bg-[#B1976B] py-3 px-6 text-white text-[15px] outline-none tracking-wide cursor-pointer poppins-semibold"
               type="submit"
             />
           </form>
@@ -60,7 +60,7 @@ const Contacto = () => {
             Ubicación
           </h1>
           {/* Subtitulo */}
-          <h2 className="text-[17px] text-[#474747]  sm:mb-14 mb-8 flex flex-col gap-5">
+          <h2 className="text-[16px] text-[#474747]  sm:mb-14 mb-8 flex flex-col gap-5">
             <div>
               Dirección: Vía Ricardo J. Alfaro, calle 65 oeste, P.H. Century
               Tower, Piso 13, Oficina 1313.

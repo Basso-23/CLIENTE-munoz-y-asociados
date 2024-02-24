@@ -75,7 +75,7 @@ const Nosotros = () => {
         </div>
       </section>
       {/* Cualidades--------------------------------------------------------------------------------------------------------------------------------------------- */}
-      <section className=" w-full lg:h-[475px] md:h-[850px] max-h-[1000px]  h-[280vw]  text-center relative sm:mt-[115px] mt-20 ">
+      <section className=" w-full lg:h-[475px] md:h-[850px] max-h-[1000px]  h-[280vw]  text-center relative sm:mt-[115px] mt-16 ">
         <div className=" absolute w-full h-full bg-[#171717dd] z-40"></div>
         {/* Imagen */}
         <div className=" absolute w-full h-full pluma z-30 "></div>

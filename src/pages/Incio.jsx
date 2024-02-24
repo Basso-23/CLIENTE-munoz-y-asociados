@@ -70,7 +70,7 @@ const Inicio = () => {
       </section>
       {/* Sobre nosotros--------------------------------------------------------------------------------------------------------------------------------------------- */}
       <section className=" max-w-[1250px] mx-auto sm:px-10 px-5 ">
-        <div className=" w-full md:h-[440px] h-[420px] bg-white md:-mt-16 -mt-10  shadow-md flex overflow-hidden ">
+        <div className=" w-full md:h-[440px] h-[420px] bg-white md:-mt-16 mt-10  shadow-md flex overflow-hidden ">
           <div className=" md:w-[50%] w-full  h-full flex ">
             <div className=" my-auto md:px-14 px-6 flex flex-col">
               {/* Titulo */}
@@ -97,7 +97,7 @@ const Inicio = () => {
       </section>
 
       {/* Algunos servicios--------------------------------------------------------------------------------------------------------------------------------------------- */}
-      <section className=" max-w-[1250px] mx-auto sm:px-10 px-5 text-center mt-24 ">
+      <section className=" max-w-[1250px] mx-auto sm:px-10 px-5 text-center sm:mt-24 mt-16 ">
         {/* Subtitulo */}
         <h2 className=" uppercase tracking-[3px] text-[#acacac] poppins-bold text-[14px]">
           nuestros servicios
@@ -108,7 +108,7 @@ const Inicio = () => {
         </h1>
         <div className=" w-[1px] h-[35px] bg-[#e1c088] mx-auto my-4"></div>
         {/* Servicios container */}
-        <div className=" grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 text-[#474747] mt-12 gap-x-10 gap-y-20">
+        <div className=" grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 text-[#474747] mt-12 gap-x-10 sm:gap-y-20 gap-y-14">
           <Servicio
             titulo="SERVICIOS LEGALES"
             subtitulo="Asesoramiento legal hasta representación en litigios, proporcionamos soluciones efectivas y estratégicas para tus asuntos legales."
@@ -145,7 +145,7 @@ const Inicio = () => {
       </section>
 
       {/* Porque nosotros--------------------------------------------------------------------------------------------------------------------------------------------- */}
-      <section className=" w-full md:h-[675px] sm:h-[850px] max-h-[1000px]  h-[280vw]  text-center relative mt-[115px]">
+      <section className=" w-full md:h-[675px] sm:h-[850px] max-h-[1000px]  h-[280vw]  text-center relative sm:mt-[115px] mt-16">
         <div className=" absolute w-full h-full bg-[#171717b2] z-40"></div>
         {/* Imagen */}
         <div className=" absolute w-full h-full columnas2 z-30 "></div>

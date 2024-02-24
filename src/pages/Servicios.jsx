@@ -1,16 +1,23 @@
 import Arrow from "@/assets/icons/Arrow";
 import Arrow3 from "@/assets/icons/Arrow3";
 import React, { useState, useEffect, useRef } from "react";
+import { Link as LinkDiv, animateScroll as scroll } from "react-scroll";
 const Servicios = () => {
   const [isActive, setIsActive] = useState("Auditorías");
 
   const Opcion = ({ name, isActive, setIsActive }) => {
     return (
-      <div className="text-[16px] poppins-semibold tracking-wide w-full ">
+      <LinkDiv
+        to="info"
+        smooth={true}
+        duration={700}
+        offset={-90}
+        onClick={() => {
+          setIsActive(name);
+        }}
+        className="text-[16px] poppins-semibold tracking-wide w-full "
+      >
         <div
-          onClick={() => {
-            setIsActive(name);
-          }}
           className={
             isActive === name
               ? "py-1 border-l-4 border-[#B1976B]  text-[#B1976B] flex gap-2 items-center transition-all pointer-events-none"
@@ -25,7 +32,7 @@ const Servicios = () => {
           <div> {name} </div>
         </div>
         <div className=" w-full h-[0.5px] bg-[#d0d0d0] mt-4"> </div>
-      </div>
+      </LinkDiv>
     );
   };
   return (
@@ -90,7 +97,10 @@ const Servicios = () => {
             setIsActive={setIsActive}
           />
         </div>
-        <div className=" xl:w-[885px]  w-full h-96 bg-red-300"></div>
+        <div
+          name="info"
+          className=" xl:w-[885px]  w-full h-96 bg-red-300"
+        ></div>
         <div className=" h-screen"></div>
       </section>
     </main>
