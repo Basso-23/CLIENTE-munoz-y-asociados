@@ -51,7 +51,7 @@ const Navbar = () => {
     <main className="flex items-center bg-white h-[80px] fixed z-50 w-full shadow-md">
       <section className="flex max-w-[1250px] w-full mx-auto sm:px-10 px-5 py-2 justify-between ">
         {/* Nombre y logo--------------------------------------------------------------------------------------------------------------------------------------------- */}
-        <div className=" flex  my-auto gap-2 uppercase">
+        <Link href={"/"} className=" flex  my-auto gap-2 uppercase">
           {/* Logo */}
           <div className="logo w-20 h-16"></div>
           {/* Nombre */}
@@ -61,7 +61,7 @@ const Navbar = () => {
               Firma Legal
             </div>
           </div>
-        </div>
+        </Link>
         {/* Navbar--------------------------------------------------------------------------------------------------------------------------------------------- */}
         <div className=" xl:flex hidden gap-8 my-auto tracking-wide uppercase text-[14px]">
           <Nav name="Inicio" url="/" />

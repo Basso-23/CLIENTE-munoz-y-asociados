@@ -40,21 +40,21 @@ const Inicio = () => {
             Bienvenido a
           </h2>
           <div className=" w-[100px] h-[1px] bg-[#B1976B] mx-auto  md:mb-0 mb-6"></div>
-          <h1 className="md:text-[85px] text-[38px] uppercase font-bold tracking-wider md:leading-normal leading-none md:mb-0 mb-2">
+          <h1 className="md:text-[85px] text-[40px] uppercase font-bold tracking-wider md:leading-normal leading-none md:mb-0 mb-2">
             Muñoz & Asociados
           </h1>
           <h3 className=" text-[#d9d9d9] font-medium md:text-[22px] text-[16px] tracking-wide mt-2">
             Somos una firma legal líder en la industria financiera y
             empresarial.
           </h3>
-          <h3 className=" text-[#d9d9d9] font-medium md:text-[22px] text-[16px] tracking-wide mt-1">
+          <h3 className=" text-[#d9d9d9] font-medium md:text-[22px] text-[16px] tracking-wide mt-1 leading-none">
             Con más de 30 años de experiencia.
           </h3>
           {/* Boton */}
           <div className="flex justify-center ">
             <Link
               href={"/Contacto"}
-              className="bg-[#a38151] uppercase font-bold text-[12px] tracking-[3px] py-[14px] px-6 mt-10 flex gap-[2px] cursor-pointer rounded-sm"
+              className="bg-[#a38151] uppercase font-bold text-[12px] tracking-[3px] py-[14px] px-6 mt-10 flex gap-[2px] cursor-pointer"
             >
               <div>Contacto</div>
               <div className=" -mt-[1.5px]">
@@ -66,7 +66,7 @@ const Inicio = () => {
       </section>
       {/* Sobre nosotros--------------------------------------------------------------------------------------------------------------------------------------------- */}
       <section className=" max-w-[1250px] mx-auto sm:px-10 px-5 ">
-        <div className=" w-full md:h-[440px] h-[420px] bg-white md:-mt-16 -mt-10  rounded-lg shadow-xl flex overflow-hidden ">
+        <div className=" w-full md:h-[440px] h-[420px] bg-white md:-mt-16 -mt-10  shadow-md flex overflow-hidden ">
           <div className=" md:w-[50%] w-full  h-full flex ">
             <div className=" my-auto md:px-14 px-6 flex flex-col">
               {/* Titulo */}
@@ -75,7 +75,7 @@ const Inicio = () => {
               </div>
               <div className=" w-[50px] h-[3px] bg-[#b1976b] mt-2"></div>
               {/* Subtitulo */}
-              <h2 className="text-[18px] text-[#474747]  mt-8 font-light">
+              <h2 className="text-[18px] text-[#474747]  sm:mt-8 mt-4 font-light">
                 Asesoramos a clientes de forma integral de acuerdo con sus
                 necesidades. Actualmente ofrecemos servicios de auditoría,
                 contables, legales, y de outsorcing, bajo altos estandares de
@@ -146,7 +146,7 @@ const Inicio = () => {
         {/* Imagen */}
         <div className=" absolute w-full h-full columnas2 z-30 "></div>
         {/* Container */}
-        <div className="  md:w-[98%] md:h-[88%] w-[95%] h-[95%]  border-[1px] border-[#696969] flex flex-col justify-center tracking-wide absolute z-40 fixedCenterXnY px-5">
+        <div className="  md:w-[96%] md:h-[87%] w-[95%] h-[95%]  border-[1px] border-[#696969] flex flex-col justify-center tracking-wide absolute z-40 fixedCenterXnY px-5">
           {/* Subtitulo */}
           <h2 className=" uppercase tracking-[3px] text-[#d3b380] font-bold text-[14px]">
             Razones para elegirnos
