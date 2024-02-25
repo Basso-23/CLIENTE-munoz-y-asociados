@@ -40,22 +40,22 @@ const Inicio = () => {
       {/* Banner--------------------------------------------------------------------------------------------------------------------------------------------- */}
       <section className=" w-full sm:h-[675px] h-[500px]  text-center biblioteca">
         <div className="  w-full h-full bg-[#17171797] flex flex-col justify-center tracking-wide  ">
-          <h2 className=" md:text-[35px] text-[20px] text-[#B1976B] uppercase tracking-widest  poppins-light">
+          <h2 className=" md:text-[35px] text-[20px] text-[#B1976B] uppercase tracking-widest  poppins-light animate-fade-up">
             Bienvenido a
           </h2>
-          <div className=" w-[100px] h-[1px] bg-[#B1976B] mx-auto  md:mb-0 mb-6"></div>
-          <h1 className="md:text-[85px] text-[40px] uppercase poppins-bold tracking-[1px] md:leading-normal leading-none md:mb-0 mb-2">
+          <div className=" w-[100px] h-[1px] bg-[#B1976B] mx-auto  md:mb-0 mb-6 animate-fade-up"></div>
+          <h1 className="md:text-[85px] text-[40px] uppercase poppins-bold tracking-[1px] md:leading-normal leading-none md:mb-0 mb-2 animate-fade-up animate-delay-100">
             Muñoz & Asociados
           </h1>
-          <h3 className=" text-[#d9d9d9] poppins-light md:text-[16px] text-[15px] tracking-wide mt-2 ">
+          <h3 className=" text-[#d9d9d9] poppins-light md:text-[16px] text-[15px] tracking-wide mt-2 animate-fade-up animate-delay-150">
             Somos una firma legal líder en la industria financiera y
             empresarial.
           </h3>
-          <h3 className=" text-[#d9d9d9] poppins-light md:text-[16px] text-[15px] tracking-wide mt-1 leading-none">
+          <h3 className=" text-[#d9d9d9] poppins-light md:text-[16px] text-[15px] tracking-wide mt-1 leading-none animate-fade-up animate-delay-150">
             Con más de 30 años de experiencia.
           </h3>
           {/* Boton */}
-          <div className="flex justify-center ">
+          <div className="flex justify-center animate-fade-up animate-delay-200">
             <Link
               href={"/Contacto"}
               className="bg-[#a38151] uppercase poppins-semibold text-[12px] tracking-[3px] py-[14px] px-6 mt-10 flex gap-[2px] cursor-pointer"
@@ -69,7 +69,7 @@ const Inicio = () => {
         </div>
       </section>
       {/* Sobre nosotros--------------------------------------------------------------------------------------------------------------------------------------------- */}
-      <section className=" max-w-[1250px] mx-auto sm:px-10 px-5 ">
+      <section className=" max-w-[1250px] mx-auto sm:px-10 px-5">
         <div className=" w-full md:h-[440px] h-[420px] bg-white md:-mt-16 mt-10  shadow-md flex overflow-hidden ">
           <div className=" md:w-[50%] w-full  h-full flex ">
             <div className=" my-auto md:px-14 px-6 flex flex-col">

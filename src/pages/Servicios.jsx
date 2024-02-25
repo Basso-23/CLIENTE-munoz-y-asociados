@@ -1,4 +1,3 @@
-import Arrow from "@/assets/icons/Arrow";
 import Arrow3 from "@/assets/icons/Arrow3";
 import React, { useState, useEffect, useRef } from "react";
 import { Link as LinkDiv, animateScroll as scroll } from "react-scroll";
@@ -7,6 +6,7 @@ import Mail from "@/assets/icons/Mail";
 import Phone from "@/assets/icons/Phone";
 import Contact from "@/assets/icons/Contact";
 import Link from "next/link";
+import { motion as m, AnimatePresence } from "framer-motion";
 
 const Servicios = () => {
   const [isActive, setIsActive] = useState("Asesorías");
@@ -66,10 +66,10 @@ const Servicios = () => {
       {/* Banner--------------------------------------------------------------------------------------------------------------------------------------------- */}
       <section className=" w-full sm:h-[375px] h-[140px]  text-center columnas text-white">
         <div className="  w-full h-full bg-[#0000009d] flex flex-col justify-center tracking-wider uppercase poppins-bold  ">
-          <h1 className=" md:text-[85px] text-[40px] uppercase poppins-bold tracking-[1px] leading-tight">
+          <h1 className=" md:text-[85px] text-[40px] uppercase poppins-bold tracking-[1px] leading-tight animate-fade-up ">
             Servicios
           </h1>
-          <h1 className=" sm:text-[15px]  text-[12px] text-[#d0d0d0]  tracking-[2px] poppins-light">
+          <h1 className=" sm:text-[15px]  text-[12px] text-[#d0d0d0]  tracking-[2px] poppins-light animate-fade-up animate-delay-150">
             soluciones jurídicas y contables
           </h1>
         </div>
@@ -166,7 +166,10 @@ const Servicios = () => {
         {/* Right--------------------------------------------------------------------------------------------------------------------------------------------- */}
         <div name="info" className=" xl:w-[905px]  w-full xl:mt-0 mt-12">
           {filtered.map((item) => (
-            <div key={item.id} className="flex flex-col gap-6 sm:pb-20">
+            <div
+              key={item.id}
+              className="flex flex-col gap-6 sm:pb-20 animate-fade-right"
+            >
               {/* Image */}
               <div className={` w-full aspect-[16/6.5] ${item.image}`}></div>
               {/* Subtitulo */}
