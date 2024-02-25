@@ -168,7 +168,7 @@ const Servicios = () => {
           {filtered.map((item) => (
             <div
               key={item.id}
-              className="flex flex-col gap-6 sm:pb-20 animate-fade-right"
+              className="flex flex-col gap-6 sm:pb-20 animate-fade-right animate-delay-200"
             >
               {/* Image */}
               <div className={` w-full aspect-[16/6.5] ${item.image}`}></div>
