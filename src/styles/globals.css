@@ -199,3 +199,10 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.columnas4 {
+  background-image: url(../assets/images/columnas4.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}

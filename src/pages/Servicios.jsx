@@ -3,6 +3,10 @@ import Arrow3 from "@/assets/icons/Arrow3";
 import React, { useState, useEffect, useRef } from "react";
 import { Link as LinkDiv, animateScroll as scroll } from "react-scroll";
 import { servicios } from "@/assets/json/servicios";
+import Mail from "@/assets/icons/Mail";
+import Phone from "@/assets/icons/Phone";
+import Contact from "@/assets/icons/Contact";
+import Link from "next/link";
 
 const Servicios = () => {
   const [isActive, setIsActive] = useState("Auditorías");
@@ -58,7 +62,7 @@ const Servicios = () => {
     );
   };
   return (
-    <main className=" text-black">
+    <main className=" text-black mb-20">
       {/* Banner--------------------------------------------------------------------------------------------------------------------------------------------- */}
       <section className=" w-full sm:h-[400px] h-[140px]  text-center columnas text-white">
         <div className="  w-full h-full bg-[#0000009d] flex flex-col justify-center tracking-wider uppercase poppins-bold  ">
@@ -72,8 +76,9 @@ const Servicios = () => {
       </section>
 
       {/* Content--------------------------------------------------------------------------------------------------------------------------------------------- */}
-      <section className="xl:flex gap-10  max-w-[1400px] mx-auto sm:px-10 px-5 sm:mt-16 mt-12 ">
-        <div className=" xl:w-[365px] w-full xl:flex xl:flex-col grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 xl:justify-start justify-center gap-5">
+      <section className="xl:flex gap-14  max-w-[1400px] mx-auto sm:px-10 px-5 sm:mt-16 mt-12 ">
+        {/* Left--------------------------------------------------------------------------------------------------------------------------------------------- */}
+        <div className=" xl:w-[340px] w-full xl:flex xl:flex-col grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 xl:justify-start justify-center gap-5">
           <Opcion
             name={"Auditorías"}
             isActive={isActive}
@@ -119,22 +124,62 @@ const Servicios = () => {
             isActive={isActive}
             setIsActive={setIsActive}
           />
+          <div className=" columnas4 relative h-[500px] xl:flex hidden">
+            <div className=" absolute w-full h-full bg-[#000000b7] flex flex-col gap-6 justify-center items-center text-white text-center px-10">
+              {" "}
+              <h1 className=" poppins-bold tracking-wide text-[#B1976B] text-[22px]">
+                Let us help you!
+              </h1>
+              <div className="text-[#bababa]">
+                If you need any helps, please feel free to contact us. We will
+                get back to you with 1 business day. Or if in hurry, just call
+                us now.
+              </div>
+              <div className="text-[22px] poppins-semibold ">
+                Lun – Vie 09:00-17:00
+              </div>
+              <div className=" flex gap-3 items-center">
+                <div className=" -mb-1 text-[#B1976B]">
+                  <Mail />
+                </div>
+                <div className="text-[#bababa]">
+                  contacto@munozyasociados.net
+                </div>
+              </div>
+              <div className=" flex gap-3 items-center text-[#B1976B]">
+                <Phone />
+                <div className="text-[#bababa]">278-1579 / 278-1580</div>
+              </div>
+            </div>
+          </div>
+          <Link
+            href={"/Contacto"}
+            className=" bg-[#B1976B] px-8 py-4 xl:flex hidden text-white poppins-semibold gap-2 items-center tracking-wide"
+          >
+            <Contact />
+            Contáctanos
+          </Link>
         </div>
 
-        <div name="info" className=" xl:w-[885px]  w-full xl:mt-0 mt-12">
+        {/* Right--------------------------------------------------------------------------------------------------------------------------------------------- */}
+        <div name="info" className=" xl:w-[905px]  w-full xl:mt-0 mt-12">
           {filtered.map((item) => (
             <div key={item.id} className="flex flex-col gap-6 pb-20">
+              {/* Image */}
               <div className={` w-full aspect-[16/6.5] ${item.image}`}></div>
-              <div className="text-[#B1976B] poppins-bold text-[25px] mt-5">
+              {/* Subtitulo */}
+              <div className="text-[#B1976B] poppins-bold text-[25px] sm:mt-5">
                 {item.subtitle}
               </div>
-
+              {/* Tipo y descripcion */}
               <div className="grid lg:grid-cols-2 grid-cols-1 poppins-semibold gap-x-6">
                 {item.contenido.map((item, index) => (
-                  <div key={index} className=" w-full mb-10">
+                  <div key={index} className=" w-full mb-10 text-[18px]">
                     <span>{index + 1}.</span>
                     <span className="ml-1">{item.tipo}</span>
-                    <div className="poppins-light mt-2">{item.descripcion}</div>
+                    <div className="poppins-light mt-2 text-[16px]">
+                      {item.descripcion}
+                    </div>
                   </div>
                 ))}
               </div>
