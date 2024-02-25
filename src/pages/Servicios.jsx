@@ -64,9 +64,9 @@ const Servicios = () => {
   return (
     <main className=" text-black mb-20">
       {/* Banner--------------------------------------------------------------------------------------------------------------------------------------------- */}
-      <section className=" w-full sm:h-[400px] h-[140px]  text-center columnas text-white">
+      <section className=" w-full sm:h-[375px] h-[140px]  text-center columnas text-white">
         <div className="  w-full h-full bg-[#0000009d] flex flex-col justify-center tracking-wider uppercase poppins-bold  ">
-          <h1 className=" lg:text-[65px] sm:text-[40px] text-[35px] normal-case tracking-[1px] poppins-semibold   ">
+          <h1 className=" md:text-[85px] text-[40px] uppercase poppins-bold tracking-[1px] leading-tight">
             Servicios
           </h1>
           <h1 className=" sm:text-[15px]  text-[12px] text-[#d0d0d0]  tracking-[2px] poppins-light">

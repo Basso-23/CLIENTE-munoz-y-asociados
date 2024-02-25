@@ -44,7 +44,7 @@ const Inicio = () => {
             Bienvenido a
           </h2>
           <div className=" w-[100px] h-[1px] bg-[#B1976B] mx-auto  md:mb-0 mb-6"></div>
-          <h1 className="md:text-[85px] text-[40px] uppercase poppins-bold tracking-wider md:leading-normal leading-none md:mb-0 mb-2">
+          <h1 className="md:text-[85px] text-[40px] uppercase poppins-bold tracking-[1px] md:leading-normal leading-none md:mb-0 mb-2">
             Muñoz & Asociados
           </h1>
           <h3 className=" text-[#d9d9d9] poppins-light md:text-[16px] text-[15px] tracking-wide mt-2 ">

@@ -21,12 +21,12 @@ const Nosotros = () => {
   return (
     <main className="  text-white ">
       {/* Banner--------------------------------------------------------------------------------------------------------------------------------------------- */}
-      <section className=" w-full sm:h-[400px] h-[140px]  text-center columnas3">
-        <div className="  w-full h-full bg-[#0000009d] flex flex-col justify-center tracking-wider uppercase  ">
-          <h1 className=" lg:text-[65px] sm:text-[40px] text-[35px] normal-case tracking-[1px] poppins-semibold poppins-bold   ">
+      <section className=" w-full sm:h-[375px] h-[140px]  text-center columnas3">
+        <div className="  w-full h-full bg-[#0000009d] flex flex-col justify-center tracking-wider ">
+          <h1 className=" md:text-[85px] text-[40px] uppercase poppins-bold tracking-[1px] leading-tight">
             Nosotros
           </h1>
-          <h1 className=" sm:text-[15px]  text-[12px] text-[#d0d0d0]  tracking-[2px] ">
+          <h1 className=" sm:text-[15px]  text-[12px] text-[#d0d0d0]  tracking-[2px] poppins-light uppercase">
             La historia de nuestra empresa
           </h1>
         </div>
