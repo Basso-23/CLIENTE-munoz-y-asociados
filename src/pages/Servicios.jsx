@@ -9,12 +9,12 @@ import Contact from "@/assets/icons/Contact";
 import Link from "next/link";
 
 const Servicios = () => {
-  const [isActive, setIsActive] = useState("Auditorías");
+  const [isActive, setIsActive] = useState("Asesorías");
   const [filtered, setFiltered] = useState(servicios);
 
   useEffect(() => {
     var filtered = servicios.filter(function (atribute) {
-      return atribute.title == "Auditorías";
+      return atribute.title == "Asesorías";
     });
     setFiltered(filtered);
   }, []);
@@ -76,9 +76,14 @@ const Servicios = () => {
       </section>
 
       {/* Content--------------------------------------------------------------------------------------------------------------------------------------------- */}
-      <section className="xl:flex gap-14  max-w-[1400px] mx-auto sm:px-10 px-5 sm:mt-16 mt-12 ">
+      <section className="xl:flex gap-16  max-w-[1400px] mx-auto sm:px-10 px-5 sm:mt-16 mt-12 ">
         {/* Left--------------------------------------------------------------------------------------------------------------------------------------------- */}
         <div className=" xl:w-[340px] w-full xl:flex xl:flex-col grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 xl:justify-start justify-center gap-5">
+          <Opcion
+            name={"Asesorías"}
+            isActive={isActive}
+            setIsActive={setIsActive}
+          />
           <Opcion
             name={"Auditorías"}
             isActive={isActive}
@@ -94,11 +99,7 @@ const Servicios = () => {
             isActive={isActive}
             setIsActive={setIsActive}
           />
-          <Opcion
-            name={"Asesorías"}
-            isActive={isActive}
-            setIsActive={setIsActive}
-          />
+
           <Opcion
             name={"Servicios de Planilla"}
             isActive={isActive}
@@ -109,6 +110,7 @@ const Servicios = () => {
             isActive={isActive}
             setIsActive={setIsActive}
           />
+
           <Opcion
             name={"Servicios Legales"}
             isActive={isActive}
@@ -172,7 +174,7 @@ const Servicios = () => {
                 {item.subtitle}
               </div>
               {/* Tipo y descripcion */}
-              <div className="grid lg:grid-cols-2 grid-cols-1 poppins-semibold gap-x-6">
+              <div className="grid lg:grid-cols-2 grid-cols-1 poppins-semibold gap-x-8">
                 {item.contenido.map((item, index) => (
                   <div key={index} className=" w-full mb-10 text-[18px]">
                     <span>{index + 1}.</span>

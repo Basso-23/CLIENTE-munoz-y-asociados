@@ -1,57 +1,126 @@
 const servicios = [
   {
     id: 1,
-    title: "Auditorías",
-    subtitle: "Mantén el Control de tu Cumplimiento Legal",
-    image: "audits",
+    title: "Servicios Legales",
+    subtitle: "Soluciones Legales Integradas",
+    image: "legal",
     contenido: [
       {
-        tipo: "Auditoría de estados financieros",
+        tipo: "Constitución de Sociedades Anónimas",
         descripcion:
-          "Revisión exhaustiva de los estados financieros de una empresa para garantizar su precisión, integridad y conformidad con los principios contables y regulaciones pertinentes.",
+          "Servicio para establecer empresas con responsabilidad limitada y capital social dividido en acciones.",
       },
       {
-        tipo: "Certificación de estados financieros para bancos",
+        tipo: "Constitución de Fundaciones de Interés Privado",
         descripcion:
-          "Evaluación de los estados financieros de una empresa para verificar su exactitud y proporcionar una garantía a los bancos u otras instituciones financieras sobre la situación financiera de la empresa.",
+          "Ayuda en la creación de organizaciones sin fines de lucro, con propósitos específicos y patrimonio independiente.",
       },
       {
-        tipo: "Auditorías a sistemas de control interno",
+        tipo: "Disolución de Sociedades",
         descripcion:
-          "Análisis detallado de los procedimientos y controles internos de una organización para identificar posibles deficiencias, riesgos y áreas de mejora en la gestión de riesgos y la prevención de fraudes.",
+          "Asistencia en el cese legal de operaciones de una empresa, liquidando activos y pasivos.",
       },
       {
-        tipo: "Auditorías Internas",
+        tipo: "Agentes Residentes",
         descripcion:
-          "Evaluación independiente de las operaciones, procesos y controles internos de una empresa realizada por su propio equipo de auditoría para mejorar la eficiencia, la eficacia y el cumplimiento de las políticas y regulaciones internas y externas.",
+          "Representación legal requerida para empresas extranjeras con negocios en Panamá.",
       },
       {
-        tipo: "Auditorías Especiales (Due diligences)",
+        tipo: "Registros de marcas",
         descripcion:
-          "Investigación exhaustiva y detallada de una empresa o de una operación específica, generalmente realizada antes de una transacción comercial, para evaluar su viabilidad, riesgos, oportunidades y cumplimiento legal.",
+          "Trámite legal para proteger marcas comerciales y propiedad intelectual.",
       },
       {
-        tipo: "Auditorías forenses y peritajes judiciales",
+        tipo: "Constitución y asesoramiento en Asociaciones sin fines de Lucro",
         descripcion:
-          "Investigación de posibles fraudes, irregularidades o disputas legales dentro de una empresa, utilizando técnicas forenses y proporcionando testimonio experto en procesos judiciales.",
+          "Apoyo en la creación y gestión de organizaciones con objetivos sociales, culturales o de otro tipo, sin fines de lucro.",
       },
       {
-        tipo: "Procedimientos previamente acordados de auditoría",
+        tipo: "Redacción y revisión de contratos",
         descripcion:
-          "Proceso de auditoría personalizado diseñado según las necesidades y requisitos específicos del cliente para evaluar áreas o aspectos particulares de su negocio o operaciones.",
+          "Servicio legal para redactar, revisar y asesorar en contratos de diferentes tipos, como civiles, comerciales y laborales.",
       },
       {
-        tipo: "Revisión de estados financieros",
+        tipo: "Debida diligencia o Due Diligence Legal",
         descripcion:
-          "Evaluación detallada de los estados financieros de una empresa para detectar errores, inconsistencias o áreas de mejora, con el objetivo de proporcionar recomendaciones para su corrección y mejora.",
+          "Evaluación exhaustiva de la situación legal de una empresa o transacción antes de su realización.",
       },
       {
-        tipo: "Compilaciones de estados financieros e información financiera",
+        tipo: "Registros Sanitarios",
         descripcion:
-          "Preparación y presentación de estados financieros y otra información financiera de una empresa en forma de informes contables, sin realizar una revisión o auditoría exhaustiva de los mismos.",
+          "Trámite para obtener autorización legal para la comercialización y distribución de productos sanitarios.",
+      },
+      {
+        tipo: "Asesoría Jurídica",
+        descripcion:
+          "Orientación y asistencia legal en diversas áreas del derecho.",
+      },
+      {
+        tipo: "Dirección General de Ingresos (DGI). (Solicitud de RUC)",
+        descripcion:
+          "Trámite para obtener el Registro Único de Contribuyentes ante la autoridad fiscal.",
+      },
+      {
+        tipo: "Consultas ante la Dirección General de Ingresos (DGI)",
+        descripcion:
+          "Servicio legal para resolver dudas y consultas con la autoridad fiscal.",
+      },
+      {
+        tipo: "Procesos de Cobro Coactivo en la Dirección General de Ingresos (DGI)",
+        descripcion: "Asistencia legal en casos de cobro de deudas fiscales.",
+      },
+      {
+        tipo: "Ministerio de Comercio e Industrias (MICI) (Permiso de Operación)",
+        descripcion:
+          "Trámite para obtener autorización para operar comercialmente ante el Ministerio.",
+      },
+      {
+        tipo: "Autoridad Nacional de Administración de Tierra (ANATI)",
+        descripcion: "Trámites relacionados con la administración de tierras.",
+      },
+      {
+        tipo: "Caja de Seguro Social (CSS). (Registro de nuevo patrono en CSS, Cierre de planilla ante CSS)",
+        descripcion:
+          "Trámites relacionados con el registro y cierre de empresas ante la seguridad social.",
+      },
+      {
+        tipo: "Inscripción de Negocio ante Municipio de Panamá",
+        descripcion:
+          "Registro legal de empresas ante la autoridad municipal de Panamá.",
+      },
+      {
+        tipo: "Cierre de Negocio ante Municipio de Panamá",
+        descripcion:
+          "Procedimiento legal para dar de baja una empresa registrada ante la autoridad municipal de Panamá.",
+      },
+      {
+        tipo: "Migración",
+        descripcion:
+          "Asesoría legal en temas migratorios, como visas y permisos de residencia.",
+      },
+      {
+        tipo: "Derecho Laboral",
+        descripcion:
+          "Asesoramiento legal en asuntos laborales, como consultas, reglamentos internos y permisos.",
+      },
+      {
+        tipo: "Derecho de Familia",
+        descripcion:
+          "Asistencia legal en asuntos relacionados con el derecho de familia, como divorcios, custodia y manutención de hijos.",
+      },
+      {
+        tipo: "Bienes Raíces",
+        descripcion:
+          "Asesoramiento legal en transacciones inmobiliarias, como compra, venta y arrendamiento de propiedades.",
+      },
+      {
+        tipo: "Derecho Bancario",
+        descripcion:
+          "Asesoramiento legal en asuntos relacionados con el sistema bancario y financiero.",
       },
     ],
   },
+
   {
     id: 2,
     title: "Impuestos",
@@ -263,125 +332,58 @@ const servicios = [
   },
   {
     id: 7,
-    title: "Servicios Legales",
-    subtitle: "Soluciones Legales Integradas",
-    image: "legal",
+    title: "Auditorías",
+    subtitle: "Mantén el Control de tu Cumplimiento Legal",
+    image: "audits",
     contenido: [
       {
-        tipo: "Constitución de Sociedades Anónimas",
+        tipo: "Auditoría de estados financieros",
         descripcion:
-          "Servicio para establecer empresas con responsabilidad limitada y capital social dividido en acciones.",
+          "Revisión exhaustiva de los estados financieros de una empresa para garantizar su precisión, integridad y conformidad con los principios contables y regulaciones pertinentes.",
       },
       {
-        tipo: "Constitución de Fundaciones de Interés Privado",
+        tipo: "Certificación de estados financieros para bancos",
         descripcion:
-          "Ayuda en la creación de organizaciones sin fines de lucro, con propósitos específicos y patrimonio independiente.",
+          "Evaluación de los estados financieros de una empresa para verificar su exactitud y proporcionar una garantía a los bancos u otras instituciones financieras sobre la situación financiera de la empresa.",
       },
       {
-        tipo: "Disolución de Sociedades",
+        tipo: "Auditorías a sistemas de control interno",
         descripcion:
-          "Asistencia en el cese legal de operaciones de una empresa, liquidando activos y pasivos.",
+          "Análisis detallado de los procedimientos y controles internos de una organización para identificar posibles deficiencias, riesgos y áreas de mejora en la gestión de riesgos y la prevención de fraudes.",
       },
       {
-        tipo: "Agentes Residentes",
+        tipo: "Auditorías Internas",
         descripcion:
-          "Representación legal requerida para empresas extranjeras con negocios en Panamá.",
+          "Evaluación independiente de las operaciones, procesos y controles internos de una empresa realizada por su propio equipo de auditoría para mejorar la eficiencia, la eficacia y el cumplimiento de las políticas y regulaciones internas y externas.",
       },
       {
-        tipo: "Registros de marcas",
+        tipo: "Auditorías Especiales (Due diligences)",
         descripcion:
-          "Trámite legal para proteger marcas comerciales y propiedad intelectual.",
+          "Investigación exhaustiva y detallada de una empresa o de una operación específica, generalmente realizada antes de una transacción comercial, para evaluar su viabilidad, riesgos, oportunidades y cumplimiento legal.",
       },
       {
-        tipo: "Constitución y asesoramiento en Asociaciones sin fines de Lucro",
+        tipo: "Auditorías forenses y peritajes judiciales",
         descripcion:
-          "Apoyo en la creación y gestión de organizaciones con objetivos sociales, culturales o de otro tipo, sin fines de lucro.",
+          "Investigación de posibles fraudes, irregularidades o disputas legales dentro de una empresa, utilizando técnicas forenses y proporcionando testimonio experto en procesos judiciales.",
       },
       {
-        tipo: "Redacción y revisión de contratos",
+        tipo: "Procedimientos previamente acordados de auditoría",
         descripcion:
-          "Servicio legal para redactar, revisar y asesorar en contratos de diferentes tipos, como civiles, comerciales y laborales.",
+          "Proceso de auditoría personalizado diseñado según las necesidades y requisitos específicos del cliente para evaluar áreas o aspectos particulares de su negocio o operaciones.",
       },
       {
-        tipo: "Debida diligencia o Due Diligence Legal",
+        tipo: "Revisión de estados financieros",
         descripcion:
-          "Evaluación exhaustiva de la situación legal de una empresa o transacción antes de su realización.",
+          "Evaluación detallada de los estados financieros de una empresa para detectar errores, inconsistencias o áreas de mejora, con el objetivo de proporcionar recomendaciones para su corrección y mejora.",
       },
       {
-        tipo: "Registros Sanitarios",
+        tipo: "Compilaciones de estados financieros e información financiera",
         descripcion:
-          "Trámite para obtener autorización legal para la comercialización y distribución de productos sanitarios.",
-      },
-      {
-        tipo: "Asesoría Jurídica",
-        descripcion:
-          "Orientación y asistencia legal en diversas áreas del derecho.",
-      },
-      {
-        tipo: "Dirección General de Ingresos (DGI). (Solicitud de RUC)",
-        descripcion:
-          "Trámite para obtener el Registro Único de Contribuyentes ante la autoridad fiscal.",
-      },
-      {
-        tipo: "Consultas ante la Dirección General de Ingresos (DGI)",
-        descripcion:
-          "Servicio legal para resolver dudas y consultas con la autoridad fiscal.",
-      },
-      {
-        tipo: "Procesos de Cobro Coactivo en la Dirección General de Ingresos (DGI)",
-        descripcion: "Asistencia legal en casos de cobro de deudas fiscales.",
-      },
-      {
-        tipo: "Ministerio de Comercio e Industrias (MICI) (Permiso de Operación)",
-        descripcion:
-          "Trámite para obtener autorización para operar comercialmente ante el Ministerio.",
-      },
-      {
-        tipo: "Autoridad Nacional de Administración de Tierra (ANATI)",
-        descripcion: "Trámites relacionados con la administración de tierras.",
-      },
-      {
-        tipo: "Caja de Seguro Social (CSS). (Registro de nuevo patrono en CSS, Cierre de planilla ante CSS)",
-        descripcion:
-          "Trámites relacionados con el registro y cierre de empresas ante la seguridad social.",
-      },
-      {
-        tipo: "Inscripción de Negocio ante Municipio de Panamá",
-        descripcion:
-          "Registro legal de empresas ante la autoridad municipal de Panamá.",
-      },
-      {
-        tipo: "Cierre de Negocio ante Municipio de Panamá",
-        descripcion:
-          "Procedimiento legal para dar de baja una empresa registrada ante la autoridad municipal de Panamá.",
-      },
-      {
-        tipo: "Migración",
-        descripcion:
-          "Asesoría legal en temas migratorios, como visas y permisos de residencia.",
-      },
-      {
-        tipo: "Derecho Laboral",
-        descripcion:
-          "Asesoramiento legal en asuntos laborales, como consultas, reglamentos internos y permisos.",
-      },
-      {
-        tipo: "Derecho de Familia",
-        descripcion:
-          "Asistencia legal en asuntos relacionados con el derecho de familia, como divorcios, custodia y manutención de hijos.",
-      },
-      {
-        tipo: "Bienes Raíces",
-        descripcion:
-          "Asesoramiento legal en transacciones inmobiliarias, como compra, venta y arrendamiento de propiedades.",
-      },
-      {
-        tipo: "Derecho Bancario",
-        descripcion:
-          "Asesoramiento legal en asuntos relacionados con el sistema bancario y financiero.",
+          "Preparación y presentación de estados financieros y otra información financiera de una empresa en forma de informes contables, sin realizar una revisión o auditoría exhaustiva de los mismos.",
       },
     ],
   },
+
   {
     id: 8,
     title: "Intermediacion Financiera",
