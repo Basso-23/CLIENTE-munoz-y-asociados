@@ -49,6 +49,14 @@
   font-family: poppins-light;
 }
 
+.linea {
+  visibility: hidden;
+}
+
+.nav:hover .linea {
+  visibility: visible;
+}
+
 .columnas {
   background-image: url(../assets/images/columnas.webp);
   background-size: cover;
@@ -129,10 +137,9 @@
   background-position: center;
 }
 
-.linea {
-  visibility: hidden;
-}
-
-.nav:hover .linea {
-  visibility: visible;
+.audits {
+  background-image: url(../assets/images/audits.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
