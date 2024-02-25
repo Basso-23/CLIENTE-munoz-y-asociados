@@ -93,13 +93,6 @@
   background-position: center;
 }
 
-.office {
-  background-image: url(../assets/images/office.webp);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: left;
-}
-
 .firma {
   background-image: url(../assets/images/firma.png);
   background-size: contain;
