@@ -143,3 +143,59 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.impuestos {
+  background-image: url(../assets/images/impuestos.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contables {
+  background-image: url(../assets/images/contables.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.asesoria {
+  background-image: url(../assets/images/asesoria.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.planilla {
+  background-image: url(../assets/images/planilla.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.activos {
+  background-image: url(../assets/images/activos.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.legal {
+  background-image: url(../assets/images/legal.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.finance {
+  background-image: url(../assets/images/finance.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.otro {
+  background-image: url(../assets/images/otro.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}

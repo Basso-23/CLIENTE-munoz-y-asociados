@@ -3,6 +3,7 @@ const servicios = [
     id: 1,
     title: "Auditorías",
     subtitle: "Mantén el Control de tu Cumplimiento Legal",
+    image: "audits",
     contenido: [
       {
         tipo: "Auditoría de estados financieros",
@@ -54,7 +55,8 @@ const servicios = [
   {
     id: 2,
     title: "Impuestos",
-    subtitle: "Mantén el Control de tu Cumplimiento Legal",
+    subtitle: "Servicios Fiscales y Tributarios",
+    image: "impuestos",
     contenido: [
       {
         tipo: "Preparación y/o de declaraciones de impuesto sobre la renta personas naturales",
@@ -131,7 +133,8 @@ const servicios = [
   {
     id: 3,
     title: "Servicios Contables",
-    subtitle: "Mantén el Control de tu Cumplimiento Legal",
+    subtitle: "Servicios Contables y Financieros",
+    image: "contables",
     contenido: [
       {
         tipo: "Organización contable",
@@ -162,7 +165,8 @@ const servicios = [
   {
     id: 4,
     title: "Asesorías",
-    subtitle: "Mantén el Control de tu Cumplimiento Legal",
+    subtitle: "Asesoría Legal Integral",
+    image: "asesoria",
     contenido: [
       {
         tipo: "Análisis, documentación y mejoras de procesos",
@@ -194,7 +198,8 @@ const servicios = [
   {
     id: 5,
     title: "Servicios de Planilla",
-    subtitle: "Mantén el Control de tu Cumplimiento Legal",
+    subtitle: "Servicios de Nómina y Recursos Humanos",
+    image: "planilla",
     contenido: [
       {
         tipo: "Cálculo de planilla, Vacaciones, Decimo XIII",
@@ -241,7 +246,8 @@ const servicios = [
   {
     id: 6,
     title: "Prevención de Lavado de Activos",
-    subtitle: "Mantén el Control de tu Cumplimiento Legal",
+    subtitle: "Conformidad y Gestión de Riesgos",
+    image: "activos",
     contenido: [
       {
         tipo: "Inscripción en la Unidad de Análisis Financieros (UAF). (Acompañamiento en el cumplimiento de la ley 23)",
@@ -258,7 +264,8 @@ const servicios = [
   {
     id: 7,
     title: "Servicios Legales",
-    subtitle: "Mantén el Control de tu Cumplimiento Legal",
+    subtitle: "Soluciones Legales Integradas",
+    image: "legal",
     contenido: [
       {
         tipo: "Constitución de Sociedades Anónimas",
@@ -378,7 +385,8 @@ const servicios = [
   {
     id: 8,
     title: "Intermediacion Financiera",
-    subtitle: "Mantén el Control de tu Cumplimiento Legal",
+    subtitle: "Servicios Financieros y Gestión Patrimonial",
+    image: "finance",
     contenido: [
       {
         tipo: "Apertura de cuenta bancaria",
@@ -408,7 +416,8 @@ const servicios = [
   {
     id: 9,
     title: "Otros Servicios",
-    subtitle: "Mantén el Control de tu Cumplimiento Legal",
+    subtitle: "Servicios Complementarios",
+    image: "otro",
     contenido: [
       {
         tipo: "Registro para utilización de Facturador Electrónico Gratuito (DGI)",

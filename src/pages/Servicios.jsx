@@ -122,14 +122,14 @@ const Servicios = () => {
         </div>
 
         <div name="info" className=" xl:w-[885px]  w-full xl:mt-0 mt-12">
-          <div className=" w-full aspect-[16/6.5] audits"></div>
           {filtered.map((item) => (
             <div key={item.id} className="flex flex-col gap-6 pb-20">
-              <div className="text-[#B1976B] poppins-bold text-[25px] mt-12">
+              <div className={` w-full aspect-[16/6.5] ${item.image}`}></div>
+              <div className="text-[#B1976B] poppins-bold text-[25px] mt-5">
                 {item.subtitle}
               </div>
 
-              <div className=" grid lg:grid-cols-2 grid-cols-1 poppins-semibold gap-x-6">
+              <div className="grid lg:grid-cols-2 grid-cols-1 poppins-semibold gap-x-6">
                 {item.contenido.map((item, index) => (
                   <div key={index} className=" w-full mb-10">
                     <span>{index + 1}.</span>
