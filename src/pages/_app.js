@@ -1,5 +1,6 @@
 import "@/styles/globals.css";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const App = ({ Component, pageProps, router }) => {
   return (
@@ -8,6 +9,7 @@ const App = ({ Component, pageProps, router }) => {
       <div className="pt-[80px]">
         <Component key={router.pathname} {...pageProps} />
       </div>
+      <Footer />
     </div>
   );
 };
