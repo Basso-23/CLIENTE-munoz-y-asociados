@@ -69,7 +69,6 @@ const Navbar = () => {
           <Nav name="Inicio" url="/" />
           <Nav name="Nosotros" url="/Nosotros" />
           <Nav name="Servicios" url="/Servicios" />
-          <Nav name="Logros" url="/Logros" />
           <Nav name="Contacto" url="/Contacto" />
         </div>
         {/* Menu container--------------------------------------------------------------------------------------------------------------------------------------------- */}
