@@ -386,7 +386,7 @@ const servicios = [
 
   {
     id: 8,
-    title: "Intermediacion Financiera",
+    title: "Intermediación Financiera",
     subtitle: "Servicios Financieros y Gestión Patrimonial",
     image: "finance",
     contenido: [

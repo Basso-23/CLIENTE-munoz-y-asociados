@@ -14,7 +14,7 @@ const Servicios = () => {
 
   useEffect(() => {
     var filtered = servicios.filter(function (atribute) {
-      return atribute.title == "Asesorías";
+      return atribute.title == "Auditorías";
     });
     setFiltered(filtered);
   }, []);
@@ -116,7 +116,7 @@ const Servicios = () => {
             setIsActive={setIsActive}
           />
           <Opcion
-            name={"Intermediacion Financiera"}
+            name={"Intermediación Financiera"}
             isActive={isActive}
             setIsActive={setIsActive}
           />

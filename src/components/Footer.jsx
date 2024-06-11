@@ -73,7 +73,7 @@ const Footer = () => {
           <Servicio name={"Servicios de Planilla"} />
           <Servicio name={"Prevención de Lavado de Activos"} />
           <Servicio name={"Servicios Legales"} />
-          <Servicio name={"Intermediacion Financiera"} />
+          <Servicio name={"Intermediación Financiera"} />
           <Servicio name={"Otros Servicios"} />
         </div>
       </div>
