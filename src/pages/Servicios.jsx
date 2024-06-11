@@ -9,7 +9,7 @@ import Link from "next/link";
 import { motion as m, AnimatePresence } from "framer-motion";
 
 const Servicios = () => {
-  const [isActive, setIsActive] = useState("Asesorías");
+  const [isActive, setIsActive] = useState("Auditorías");
   const [filtered, setFiltered] = useState(servicios);
 
   useEffect(() => {
@@ -80,11 +80,6 @@ const Servicios = () => {
         {/* Left--------------------------------------------------------------------------------------------------------------------------------------------- */}
         <div className=" xl:w-[340px] w-full xl:flex xl:flex-col grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 xl:justify-start justify-center gap-5">
           <Opcion
-            name={"Asesorías"}
-            isActive={isActive}
-            setIsActive={setIsActive}
-          />
-          <Opcion
             name={"Auditorías"}
             isActive={isActive}
             setIsActive={setIsActive}
@@ -99,6 +94,11 @@ const Servicios = () => {
             isActive={isActive}
             setIsActive={setIsActive}
           />
+          <Opcion
+            name={"Asesorías"}
+            isActive={isActive}
+            setIsActive={setIsActive}
+          />
 
           <Opcion
             name={"Servicios de Planilla"}
@@ -110,7 +110,6 @@ const Servicios = () => {
             isActive={isActive}
             setIsActive={setIsActive}
           />
-
           <Opcion
             name={"Servicios Legales"}
             isActive={isActive}
@@ -127,18 +126,17 @@ const Servicios = () => {
             setIsActive={setIsActive}
           />
           <div className=" columnas4 relative h-[500px] xl:flex hidden">
-            <div className=" absolute w-full h-full bg-[#000000b7] flex flex-col gap-6 justify-center items-center text-white text-center px-10">
-              {" "}
+            <div className=" absolute w-full h-full bg-[#000000b7] flex flex-col gap-6 justify-center items-center text-white text-center px-6">
               <h1 className=" poppins-bold tracking-wide text-[#B1976B] text-[22px]">
-                Let us help you!
+                ¡Déjanos ayudarte!
               </h1>
               <div className="text-[#bababa]">
-                If you need any helps, please feel free to contact us. We will
-                get back to you with 1 business day. Or if in hurry, just call
-                us now.
+                Si necesitas ayuda, no dudes en contactarnos. Te responderemos
+                dentro de un día hábil. O si tienes prisa, llámanos ahora.
               </div>
               <div className="text-[22px] poppins-semibold ">
-                Lun – Vie 09:00-17:00
+                Lunes a Viernes <br />
+                8:00 AM - 5:00PM
               </div>
               <div className=" flex gap-3 items-center">
                 <div className=" -mb-1 text-[#B1976B]">
@@ -150,7 +148,9 @@ const Servicios = () => {
               </div>
               <div className=" flex gap-3 items-center text-[#B1976B]">
                 <Phone />
-                <div className="text-[#bababa]">278-1579 / 278-1580</div>
+                <div className="text-[#bababa]">
+                  +507 278-1579 / +507 278-1580
+                </div>
               </div>
             </div>
           </div>

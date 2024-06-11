@@ -45,7 +45,7 @@ const Nosotros = () => {
                 <div className=" w-[40px] h-[4px] bg-[#b1976b] mb-7"></div>
                 {/* Titulo */}
                 <div className=" uppercase text-[#959595] poppins-bold tracking-[3px] poppins-bold">
-                  Muñoz & Asociados
+                  Muñoz y Asociados
                 </div>
                 <div className="  text-[#202020] poppins-bold tracking-wide sm:text-[45px] text-[45px] leading-none mt-3 poppins-bold">
                   Nuestra Grandiosa Historia
@@ -65,9 +65,9 @@ const Nosotros = () => {
                   contables, legales, y de outsorcing, bajo altos estandares de
                   calidad.
                 </h2>
-                <div className="w-[210px] h-[100px] firma mt-2"></div>
+                <div className="w-[210px] h-[100px] firma mt-2 invisible"></div>
                 <div className=" uppercase poppins-light text-[#474747] text-[13px] mt-2 tracking-[4px]">
-                  Muñoz & Asociados
+                  Muñoz y Asociados
                 </div>
               </div>
             </div>

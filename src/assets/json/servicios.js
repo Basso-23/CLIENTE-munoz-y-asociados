@@ -342,7 +342,7 @@ const servicios = [
           "Revisión exhaustiva de los estados financieros de una empresa para garantizar su precisión, integridad y conformidad con los principios contables y regulaciones pertinentes.",
       },
       {
-        tipo: "Certificación de estados financieros para bancos",
+        tipo: "Documentación de estados financieros para bancos",
         descripcion:
           "Evaluación de los estados financieros de una empresa para verificar su exactitud y proporcionar una garantía a los bancos u otras instituciones financieras sobre la situación financiera de la empresa.",
       },
@@ -405,12 +405,12 @@ const servicios = [
           "Preparación de proyecciones financieras para apertura de cuentas.",
       },
       {
-        tipo: "Certificación de ingresos",
+        tipo: "Documentación de ingresos",
         descripcion:
           "Documentación que valida ingresos para créditos bancarios.",
       },
       {
-        tipo: "Certificación de depósitos",
+        tipo: "Documentación de depósitos",
         descripcion: "Verificación de depósitos en instituciones financieras.",
       },
     ],

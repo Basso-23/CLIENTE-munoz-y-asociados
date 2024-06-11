@@ -57,7 +57,7 @@ const Navbar = () => {
           {/* Nombre */}
           <div className=" my-auto pt-2 leading-[15px]">
             <div className=" poppins-bold tracking-wide text-[14px]">
-              Muñoz & Asociados{" "}
+              Muñoz y Asociados{" "}
             </div>
             <div className=" poppins-light text-[11px] tracking-wider">
               Firma Legal

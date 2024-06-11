@@ -73,7 +73,7 @@ const Contacto = () => {
             </div>
             <div className=" flex gap-3 items-center">
               <Phone />
-              <div>278-1579 / 278-1580</div>
+              <div>+507 278-1579 / +507 278-1580</div>
             </div>
           </h2>
           {/* Titulo */}

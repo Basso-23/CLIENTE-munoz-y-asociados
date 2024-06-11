@@ -45,7 +45,7 @@ const Inicio = () => {
           </h2>
           <div className=" w-[100px] h-[1px] bg-[#B1976B] mx-auto  md:mb-0 mb-6 "></div>
           <h1 className="md:text-[85px] text-[40px] uppercase poppins-bold tracking-[1px] md:leading-normal leading-none md:mb-0 mb-2  animate-delay-100">
-            Muñoz & Asociados
+            Muñoz Y Asociados
           </h1>
           <h3 className=" text-[#d9d9d9] poppins-light md:text-[16px] text-[15px] tracking-wide mt-2  animate-delay-150">
             Somos una firma legal líder en la industria financiera y
@@ -85,9 +85,9 @@ const Inicio = () => {
                 contables, legales, y de outsorcing, bajo altos estandares de
                 calidad.
               </h2>
-              <div className="w-[210px] h-[100px] firma mt-2"></div>
+              <div className="w-[210px] h-[100px] firma mt-2 invisible"></div>
               <div className=" uppercase poppins-light text-[#474747] text-[13px] mt-2 tracking-[4px]">
-                Muñoz & Asociados
+                Muñoz y Asociados
               </div>
             </div>
           </div>
@@ -110,20 +110,9 @@ const Inicio = () => {
         {/* Servicios container */}
         <div className=" grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 text-[#474747] mt-12 gap-x-10 sm:gap-y-20 gap-y-14">
           <Servicio
-            titulo="SERVICIOS LEGALES"
-            subtitulo="Asesoramiento legal hasta representación en litigios, proporcionamos soluciones efectivas y estratégicas para tus asuntos legales."
-            icon={<Legales />}
-          />
-          <Servicio
             titulo="AUDITORÍAS"
             subtitulo="Evaluación de cumplimiento normativo, análisis de riesgos legales o revisiones de contratos."
             icon={<Auditoria />}
-          />
-
-          <Servicio
-            titulo="SERVICIOS CONTABLES"
-            subtitulo="Contabilidad básica hasta la preparación de estados financieros complejos, brindamos soluciones precisas y confiables."
-            icon={<Calculator />}
           />
           <Servicio
             titulo="IMPUESTOS"
@@ -131,15 +120,24 @@ const Inicio = () => {
             icon={<Tax />}
           />
           <Servicio
-            titulo="INTERMEDIACIÓN FINANCIERA"
-            subtitulo="Contamos con las mejores opciones de financiamiento y gestionar tus inversiones de manera efectiva. "
-            icon={<Money />}
+            titulo="SERVICIOS CONTABLES"
+            subtitulo="Contabilidad básica hasta la preparación de estados financieros complejos, brindamos soluciones precisas y confiables."
+            icon={<Calculator />}
           />
-
+          <Servicio
+            titulo="SERVICIOS LEGALES"
+            subtitulo="Asesoramiento legal hasta representación en litigios, proporcionamos soluciones efectivas y estratégicas para tus asuntos legales."
+            icon={<Legales />}
+          />
           <Servicio
             titulo="SERVICIOS DE PLANILLA"
             subtitulo="Cálculo preciso de salarios y beneficios hasta la presentación oportuna de informes ante las autoridades pertinentes."
             icon={<Folder />}
+          />
+          <Servicio
+            titulo="INTERMEDIACIÓN FINANCIERA"
+            subtitulo="Contamos con las mejores opciones de financiamiento y gestionar tus inversiones de manera efectiva. "
+            icon={<Money />}
           />
         </div>
       </section>

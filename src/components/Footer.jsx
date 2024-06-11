@@ -25,7 +25,7 @@ const Footer = () => {
             {/* Nombre */}
             <div className=" my-auto pt-2 leading-[18px]">
               <div className=" poppins-bold tracking-widest text-[18px]">
-                Muñoz & Asociados{" "}
+                Muñoz y Asociados{" "}
               </div>
               <div className=" poppins-light text-[12px] tracking-wider text-[#bababa]">
                 Firma Legal
@@ -59,17 +59,17 @@ const Footer = () => {
         </div>
         <div className=" flex gap-3 items-center text-white">
           <Phone />
-          <div>278-1579 / 278-1580</div>
+          <div>+507 278-1579 / +507 278-1580</div>
         </div>
       </div>
       {/* Subtitulo */}
       <div className="text-[16px] text-[#bababa] sm:max-w-[600px] w-full flex flex-col gap-5 ">
         <div className="poppins-bold text-[18px] text-white">Servicios</div>
         <div className=" grid sm:grid-cols-2 gap-2 text-[#B1976B] ">
-          <Servicio name={"Asesorías"} />
           <Servicio name={"Auditorías"} />
           <Servicio name={"Impuestos"} />
           <Servicio name={"Servicios Contables"} />
+          <Servicio name={"Asesorías"} />
           <Servicio name={"Servicios de Planilla"} />
           <Servicio name={"Prevención de Lavado de Activos"} />
           <Servicio name={"Servicios Legales"} />
