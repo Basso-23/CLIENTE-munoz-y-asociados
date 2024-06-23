@@ -23,30 +23,29 @@ const Footer = () => {
             {/* Logo */}
             <div className="logo w-20 h-16 saturate-150"></div>
             {/* Nombre */}
-            <div className=" my-auto pt-2 leading-[18px]">
+            <div className=" my-auto pt-0 leading-[18px]">
               <div className=" poppins-bold tracking-widest text-[18px]">
                 Muñoz y Asociados{" "}
               </div>
-              <div className=" poppins-light text-[12px] tracking-wider text-[#bababa]">
+              <div className="hidden  poppins-light text-[12px] tracking-wider text-[#bababa]">
                 Firma Legal
               </div>
             </div>
           </Link>
         </div>
-        <div className="text-[#bababa]">
+        <div className="text-[#bababa] invisible">
           One morning, when Gregor Samsa woke from troubled dreams, he found
           himself transformed in his bed into.
         </div>
         <div className=" flex gap-4 text-[#B1976B]">
           <Facebook />
-          <Twitter />
           <Instagram />
         </div>
       </div>
 
       {/* Subtitulo */}
       <div className="text-[16px] text-[#bababa] sm:max-w-[300px] w-full flex flex-col gap-5 justify-center">
-        <div className="poppins-bold text-[18px] text-white">Contact Info</div>
+        <div className="poppins-bold text-[18px] text-white">Contacto</div>
         <div>
           Dirección: Vía Ricardo J. Alfaro, calle 65 oeste, P.H. Century Tower,
           Piso 13, Oficina 1313.

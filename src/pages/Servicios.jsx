@@ -70,7 +70,7 @@ const Servicios = () => {
             Servicios
           </h1>
           <h1 className=" sm:text-[15px]  text-[12px] text-[#d0d0d0]  tracking-[2px] poppins-light  animate-delay-150">
-            soluciones jurídicas y contables
+            Auditoria, contable y juridicos
           </h1>
         </div>
       </section>
@@ -171,15 +171,15 @@ const Servicios = () => {
               <div className={` w-full aspect-[16/6.5] ${item.image}`}></div>
               {/* Subtitulo */}
               <div className="text-[#B1976B] poppins-bold text-[25px] sm:mt-5">
-                {item.subtitle}
+                {item.title}
               </div>
               {/* Tipo y descripcion */}
-              <div className="grid lg:grid-cols-2 grid-cols-1 poppins-semibold gap-x-8">
+              <div className="grid lg:grid-cols-2 grid-cols-1 poppins-semibold gap-x-8 text-justify">
                 {item.contenido.map((item, index) => (
                   <div key={index} className=" w-full mb-10 text-[18px]">
                     <span>{index + 1}.</span>
                     <span className="ml-1">{item.tipo}</span>
-                    <div className="poppins-light mt-2 text-[16px]">
+                    <div className="poppins-light mt-2 text-[16px] pl-4">
                       {item.descripcion}
                     </div>
                   </div>

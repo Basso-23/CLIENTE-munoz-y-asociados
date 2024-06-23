@@ -55,11 +55,11 @@ const Navbar = () => {
           {/* Logo */}
           <div className="logo w-20 h-12"></div>
           {/* Nombre */}
-          <div className=" my-auto pt-2 leading-[15px]">
+          <div className=" my-auto pt-0 leading-[15px]">
             <div className=" poppins-bold tracking-wide text-[14px]">
               Muñoz y Asociados{" "}
             </div>
-            <div className=" poppins-light text-[11px] tracking-wider">
+            <div className="hidden poppins-light text-[11px] tracking-wider">
               Firma Legal
             </div>
           </div>

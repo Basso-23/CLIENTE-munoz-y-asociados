@@ -81,7 +81,13 @@ const Contacto = () => {
             Mapa
           </h1>
           {/* Imagen */}
-          <div className=" cursor-pointer mapa w-full sm:h-[400px] h-[300px]"></div>
+          <div className=" cursor-pointer mapa w-full sm:h-[400px] h-[300px] relative">
+            <a
+              target="_blank"
+              href="https://maps.app.goo.gl/CSNgZYtXqtQnjFsk8"
+              className=" absolute  w-full h-full"
+            ></a>
+          </div>
         </div>
       </section>
     </main>

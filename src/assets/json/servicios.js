@@ -333,7 +333,7 @@ const servicios = [
   {
     id: 7,
     title: "Auditorías",
-    subtitle: "Mantén el Control de tu Cumplimiento Legal",
+    subtitle: "Auditorías",
     image: "audits",
     contenido: [
       {
@@ -342,7 +342,7 @@ const servicios = [
           "Revisión exhaustiva de los estados financieros de una empresa para garantizar su precisión, integridad y conformidad con los principios contables y regulaciones pertinentes.",
       },
       {
-        tipo: "Documentación de estados financieros para bancos",
+        tipo: "Revisión de estados financieros para bancos",
         descripcion:
           "Evaluación de los estados financieros de una empresa para verificar su exactitud y proporcionar una garantía a los bancos u otras instituciones financieras sobre la situación financiera de la empresa.",
       },

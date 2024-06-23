@@ -27,12 +27,12 @@ const Nosotros = () => {
             Nosotros
           </h1>
           <h1 className=" sm:text-[15px]  text-[12px] text-[#d0d0d0]  tracking-[2px] poppins-light uppercase  animate-delay-150">
-            La historia de nuestra empresa
+            La historia de nuestra firma
           </h1>
         </div>
       </section>
       {/* About--------------------------------------------------------------------------------------------------------------------------------------------- */}
-      <section className=" max-w-[1250px] mx-auto sm:px-10 px-5 sm:mt-24 mt-12 ">
+      <section className=" max-w-[1250px] mx-auto sm:px-10 px-5 sm:my-24 my-12 ">
         <div className=" grid lg:grid-cols-2 grid-cols-1 lg:h-[675px] gap-6">
           {/* Imagen */}
           <div className=" w-full law  relative shadow-md overflow-hidden lg:flex hidden">
@@ -48,26 +48,40 @@ const Nosotros = () => {
                   Muñoz y Asociados
                 </div>
                 <div className="  text-[#202020] poppins-bold tracking-wide sm:text-[45px] text-[45px] leading-none mt-3 poppins-bold">
-                  Nuestra Grandiosa Historia
+                  SOBRE NOSOTROS
                 </div>
 
                 {/* Subtitulo */}
-                <h2 className="text-[16px] text-[#474747]  mt-8 poppins-light">
-                  Asesoramos a clientes de forma integral de acuerdo con sus
-                  necesidades. Actualmente ofrecemos servicios de auditoría,
-                  contables, legales, y de outsorcing, bajo altos estandares de
-                  calidad.
+                <h2 className="text-[16px] text-[#474747]  mt-8 poppins-light text-justify">
+                  Muñoz y Asociados fue fundada en 1985. Ofrecemos servicios de
+                  Auditoria, Contabilidad, Legales y de Consultoría. La misma
+                  está compuesta por Contadores Públicos Autorizados, Abogados u
+                  Otros Profesionales, que ejercen en la actualidad en la
+                  República de Panamá. Mantenemos altos estándares de calidad e
+                  independencia profesional, lo cual nos ha permitido una gran
+                  acogida por parte de nuestros clientes tanto en los servicios
+                  de auditoría, contabilidad y consultoría.
                 </h2>
                 {/* Subtitulo */}
-                <h2 className="text-[16px] text-[#474747]  mt-8 poppins-light">
-                  Asesoramos a clientes de forma integral de acuerdo con sus
-                  necesidades. Actualmente ofrecemos servicios de auditoría,
-                  contables, legales, y de outsorcing, bajo altos estandares de
-                  calidad.
+                <h2 className="text-[16px] text-[#474747]  mt-8 poppins-light text-justify">
+                  Mantenemos altos estándares de calidad e independencia
+                  profesional, lo cual nos ha permitido una gran acogida por
+                  parte de nuestros clientes tanto en los servicios de
+                  auditoría, contabilidad y consultoría.
                 </h2>
                 <div className="w-[210px] h-[100px] firma mt-2 invisible"></div>
-                <div className=" uppercase poppins-light text-[#474747] text-[13px] mt-2 tracking-[4px]">
-                  Muñoz y Asociados
+                <div className=" uppercase poppins-light text-[#474747] text-[13px] tracking-[4px] flex  my-auto">
+                  {/* Logo */}
+                  <div className="logo w-20 h-12"></div>
+                  {/* Nombre */}
+                  <div className=" my-auto pt-0 leading-[15px]">
+                    <div className=" poppins-bold tracking-wide text-[14px]">
+                      Muñoz y Asociados{" "}
+                    </div>
+                    <div className="hidden poppins-light text-[11px] tracking-wider">
+                      Firma Legal
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -75,7 +89,7 @@ const Nosotros = () => {
         </div>
       </section>
       {/* Cualidades--------------------------------------------------------------------------------------------------------------------------------------------- */}
-      <section className=" w-full lg:h-[475px] md:h-[850px] max-h-[1000px]  h-[280vw]  text-center relative sm:mt-[115px] mt-16 ">
+      <section className="hidden  w-full lg:h-[475px] md:h-[850px] max-h-[1000px]  h-[280vw]  text-center relative sm:mt-[115px] mt-16 ">
         <div className=" absolute w-full h-full bg-[#171717dd] z-40"></div>
         {/* Imagen */}
         <div className=" absolute w-full h-full pluma z-30 "></div>

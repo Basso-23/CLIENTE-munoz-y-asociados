@@ -17,7 +17,7 @@ const Inicio = () => {
           {titulo}
         </h1>
         {/* Subtitulo */}
-        <h2 className="text-[16px] text-[#474747] poppins-light">
+        <h2 className="text-[16px] text-[#474747] poppins-light text-justify">
           {subtitulo}
         </h2>
         {/* Boton */}
@@ -48,10 +48,9 @@ const Inicio = () => {
             Muñoz Y Asociados
           </h1>
           <h3 className=" text-[#d9d9d9] poppins-light md:text-[16px] text-[15px] tracking-wide mt-2  animate-delay-150">
-            Somos una firma legal líder en la industria financiera y
-            empresarial.
+            Somos una Firma Integral con más de 30 años de experiencia.
           </h3>
-          <h3 className=" text-[#d9d9d9] poppins-light md:text-[16px] text-[15px] tracking-wide mt-1 leading-none  animate-delay-150">
+          <h3 className="hidden text-[#d9d9d9] poppins-light md:text-[16px] text-[15px] tracking-wide mt-1 leading-none  animate-delay-150">
             Con más de 30 años de experiencia.
           </h3>
           {/* Boton */}
@@ -82,12 +81,22 @@ const Inicio = () => {
               <h2 className="text-[16px] text-[#474747]  sm:mt-8 mt-4 poppins-light">
                 Asesoramos a clientes de forma integral de acuerdo con sus
                 necesidades. Actualmente ofrecemos servicios de auditoría,
-                contables, legales, y de outsorcing, bajo altos estandares de
+                contables, legales, y de outsourcing, bajo altos estandares de
                 calidad.
               </h2>
               <div className="w-[210px] h-[100px] firma mt-2 invisible"></div>
-              <div className=" uppercase poppins-light text-[#474747] text-[13px] mt-2 tracking-[4px]">
-                Muñoz y Asociados
+              <div className=" uppercase poppins-light text-[#474747] text-[13px] tracking-[4px] flex  my-auto">
+                {/* Logo */}
+                <div className="logo w-20 h-12"></div>
+                {/* Nombre */}
+                <div className=" my-auto pt-0 leading-[15px]">
+                  <div className=" poppins-bold tracking-wide text-[14px]">
+                    Muñoz y Asociados{" "}
+                  </div>
+                  <div className="hidden poppins-light text-[11px] tracking-wider">
+                    Firma Legal
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -99,44 +108,59 @@ const Inicio = () => {
       {/* Algunos servicios--------------------------------------------------------------------------------------------------------------------------------------------- */}
       <section className=" max-w-[1250px] mx-auto sm:px-10 px-5 text-center sm:mt-24 mt-16 ">
         {/* Subtitulo */}
-        <h2 className=" uppercase tracking-[3px] text-[#acacac] poppins-bold text-[14px]">
+        <h2 className="hidden uppercase tracking-[3px] text-[#acacac] poppins-bold text-[14px]">
           nuestros servicios
         </h2>
         {/* Titulo */}
-        <h1 className="text-[#161616] poppins-bold text-[30px] mt-2">
-          Áreas de práctica legal
+        <h1 className=" capitalize text-[#161616] poppins-bold text-[30px] mt-2">
+          nuestros servicios
         </h1>
         <div className=" w-[1px] h-[35px] bg-[#e1c088] mx-auto my-4"></div>
         {/* Servicios container */}
         <div className=" grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 text-[#474747] mt-12 gap-x-10 sm:gap-y-20 gap-y-14">
           <Servicio
             titulo="AUDITORÍAS"
-            subtitulo="Evaluación de cumplimiento normativo, análisis de riesgos legales o revisiones de contratos."
+            subtitulo="Nuestro enfoque de auditoria empieza con el conocimiento del cliente, determinando los riesgos materiales en los estados financieros para poder emitir una opinión."
             icon={<Auditoria />}
           />
           <Servicio
             titulo="IMPUESTOS"
-            subtitulo="Planificación fiscal hasta la resolución de disputas fiscales, estamos comprometidos a optimizar tu situación fiscal."
+            subtitulo="El interés de esta unidad es brindarle soporte y asistir a los clientes en aplicar las normas tributarias."
             icon={<Tax />}
           />
           <Servicio
             titulo="SERVICIOS CONTABLES"
-            subtitulo="Contabilidad básica hasta la preparación de estados financieros complejos, brindamos soluciones precisas y confiables."
+            subtitulo="Realización de los registros contables de la empresa."
             icon={<Calculator />}
           />
           <Servicio
-            titulo="SERVICIOS LEGALES"
-            subtitulo="Asesoramiento legal hasta representación en litigios, proporcionamos soluciones efectivas y estratégicas para tus asuntos legales."
+            titulo="ASESORIA"
+            subtitulo="Asesoramos a nuestros clientes en finanzas corporativa, tributaria, laboral, además diseñamos estrategias corporativas a la medida."
             icon={<Legales />}
           />
           <Servicio
             titulo="SERVICIOS DE PLANILLA"
-            subtitulo="Cálculo preciso de salarios y beneficios hasta la presentación oportuna de informes ante las autoridades pertinentes."
+            subtitulo="Como servicio tercerizado, realizamos los cálculos de planilla para la empresa, cumpliendo con las normativas vigentes."
             icon={<Folder />}
           />
           <Servicio
-            titulo="INTERMEDIACIÓN FINANCIERA"
-            subtitulo="Contamos con las mejores opciones de financiamiento y gestionar tus inversiones de manera efectiva. "
+            titulo="PREVENCION DE LAVADOS DE ACTIVOS"
+            subtitulo="Acompañamiento en la implementación de la ley 23 del 27 de abril de 2015.  "
+            icon={<Money />}
+          />
+          <Servicio
+            titulo="SERVICIOS LEGALES"
+            subtitulo="Acompañamos al cliente en temas de asesoría jurídica y tramite legales."
+            icon={<Money />}
+          />
+          <Servicio
+            titulo="INTERMEDIACION FINANCIERA"
+            subtitulo="Asesoramos al cliente para obtención de líneas de créditos bancario u otros productos disponibles en la Banca actualmente. "
+            icon={<Money />}
+          />
+          <Servicio
+            titulo="OTROS SERVICIOS "
+            subtitulo="Trámites ante entidades gubernamentales, servicios de domicilio fiscal para empresas en Panamá, y otros."
             icon={<Money />}
           />
         </div>
@@ -150,23 +174,19 @@ const Inicio = () => {
         {/* Container */}
         <div className="  md:w-[96%] md:h-[87%] w-[95%] h-[95%]  border-[1px] border-[#696969] flex flex-col justify-center tracking-wide absolute z-40 fixedCenterXnY px-5">
           {/* Subtitulo */}
-          <h2 className=" uppercase tracking-[3px] text-[#d3b380] poppins-bold text-[14px]">
+          <h2 className=" uppercase tracking-[3px] text-[#d3b380] poppins-bold text-[30px]">
             Razones para elegirnos
           </h2>
           {/* Titulo */}
-          <h1 className="text-white poppins-bold text-[30px] mt-2">
+          <h1 className="hidden text-white poppins-bold text-[30px] mt-2">
             ¿Por qué los clientes nos eligen?
           </h1>
           <div className=" w-[1px] h-[35px] bg-[#e1c088] mx-auto my-4"></div>
           {/* Parrafos */}
           <div className="md:flex justify-center text-start gap-12">
             {/* Parrafo */}
-            <div className="md:w-[500px] w-full text-[16px] text-[#bababa]  sm:mt-8 poppins-light md:text-start text-center">
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia, there live the blind texts. Separated
-              they live in Bookm arksgrove right at the coast of the Semantics,
-              a large language ocean. A small river named
-              <div className=" flex flex-col items-center  sm:mt-10 mt-4">
+            <div className="md:w-[500px] w-full text-[16px] text-[#bababa]  sm:mt-0 poppins-light md:text-start text-center">
+              <div className=" flex flex-col items-center  sm:mt-4 mt-4">
                 <div className=" poppins-bold text-white  text-[50px]">
                   100%
                 </div>
@@ -178,12 +198,8 @@ const Inicio = () => {
             </div>
 
             {/* Parrafo */}
-            <div className="md:w-[500px] w-full text-[16px] text-[#bababa]  mt-8 poppins-light md:text-start text-center">
-              A wonderful serenity has taken possession of my entire soul, like
-              these sweet mornings of spring which I enjoy with my whole heart.
-              I am alone, and feel the charm of existence in this spot, which
-              was created for the bliss of souls like mine.
-              <div className=" flex flex-col items-center sm:mt-10 mt-4">
+            <div className="md:w-[500px] w-full text-[16px] text-[#bababa]  mt-0 poppins-light md:text-start text-center">
+              <div className=" flex flex-col items-center sm:mt-0 mt-0">
                 <div className=" poppins-bold text-white  text-[50px]">30+</div>
 
                 <div className=" poppins-light text-[#d3b380] ">
