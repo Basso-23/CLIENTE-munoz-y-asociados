@@ -21,7 +21,12 @@ const Nosotros = () => {
   return (
     <main className="  text-white ">
       {/* Banner--------------------------------------------------------------------------------------------------------------------------------------------- */}
-      <section className=" w-full sm:h-[375px] h-[140px]  text-center columnas3">
+      <section
+        style={{
+          backgroundImage: "url(https://i.imgur.com/0DqZ5k5.jpeg)",
+        }}
+        className=" w-full sm:h-[375px] h-[140px]  text-center bg-center bg-no-repeat bg-cover"
+      >
         <div className="  w-full h-full bg-[#0000009d] flex flex-col justify-center tracking-wider ">
           <h1 className=" md:text-[85px] text-[40px] uppercase poppins-bold tracking-[1px] leading-tight ">
             Nosotros
@@ -35,7 +40,12 @@ const Nosotros = () => {
       <section className=" max-w-[1250px] mx-auto sm:px-10 px-5 sm:my-24 my-12 ">
         <div className=" grid lg:grid-cols-2 grid-cols-1 lg:h-[675px] gap-6">
           {/* Imagen */}
-          <div className=" w-full law  relative shadow-md overflow-hidden lg:flex hidden">
+          <div
+            style={{
+              backgroundImage: "url(https://i.imgur.com/KjBRO2Y.jpeg)",
+            }}
+            className=" w-full relative shadow-md overflow-hidden lg:flex hidden bg-top bg-no-repeat bg-cover"
+          >
             <div className="hidden w-full h-full absolute bg-[#00000036] shadow-md "></div>
           </div>
           {/* Info */}
@@ -72,7 +82,7 @@ const Nosotros = () => {
                 <div className="w-[210px] h-[100px] firma mt-2 invisible"></div>
                 <div className=" uppercase poppins-light text-[#474747] text-[13px] tracking-[4px] flex  my-auto">
                   {/* Logo */}
-                  <div className="logo w-20 h-12"></div>
+                  <div className="logo w-20 h-10"></div>
                   {/* Nombre */}
                   <div className=" my-auto pt-0 leading-[15px]">
                     <div className=" poppins-bold tracking-wide text-[14px]">

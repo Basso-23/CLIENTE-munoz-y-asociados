@@ -6,12 +6,15 @@ import Folder from "@/assets/icons/Folder";
 import Legales from "@/assets/icons/Legales";
 import Money from "@/assets/icons/Money";
 import Tax from "@/assets/icons/Tax";
+import { FaHandsHelping } from "react-icons/fa";
+import { FaMoneyBill } from "react-icons/fa";
+import { MdMiscellaneousServices } from "react-icons/md";
 
 const Inicio = () => {
   const Servicio = ({ titulo, subtitulo, icon }) => {
     return (
       <div className="w-full flex flex-col items-center gap-6 ">
-        <div className="text-[#c49c5d]">{icon}</div>
+        <div className="text-[#c49c5d] text-[45px]">{icon}</div>
         {/* Titulo */}
         <h1 className=" poppins-semibold tracking-[3px] text-[15px]">
           {titulo}
@@ -27,7 +30,7 @@ const Inicio = () => {
             className="uppercase poppins-bold sm:text-[12px] text-[14px]  tracking-[3px] flex gap-[2px] cursor-pointer rounded-sm"
           >
             <div>Ver más</div>
-            <div className=" sm:-mt-[1.5px] mt-[0x]">
+            <div className=" sm:-mt-[1.5px] mt-[0x] ">
               <Arrow />
             </div>
           </Link>
@@ -38,8 +41,13 @@ const Inicio = () => {
   return (
     <main className="  text-white">
       {/* Banner--------------------------------------------------------------------------------------------------------------------------------------------- */}
-      <section className=" w-full sm:h-[675px] h-[500px]  text-center biblioteca">
-        <div className="  w-full h-full bg-[#17171797] flex flex-col justify-center tracking-wide  ">
+      <section
+        style={{
+          backgroundImage: "url(https://i.imgur.com/c8v3GcV.jpeg)",
+        }}
+        className=" w-full sm:h-[675px] h-[500px]  text-center bg-no-repeat bg-cover bg-center "
+      >
+        <div className="  w-full h-full bg-[#000000a7] flex flex-col justify-center tracking-wide  ">
           <h2 className=" md:text-[35px] text-[20px] text-[#B1976B] uppercase tracking-widest  poppins-light ">
             Bienvenido a
           </h2>
@@ -87,7 +95,7 @@ const Inicio = () => {
               <div className="w-[210px] h-[100px] firma mt-2 invisible"></div>
               <div className=" uppercase poppins-light text-[#474747] text-[13px] tracking-[4px] flex  my-auto">
                 {/* Logo */}
-                <div className="logo w-20 h-12"></div>
+                <div className="logo w-20 h-10"></div>
                 {/* Nombre */}
                 <div className=" my-auto pt-0 leading-[15px]">
                   <div className=" poppins-bold tracking-wide text-[14px]">
@@ -101,7 +109,12 @@ const Inicio = () => {
             </div>
           </div>
           {/* Image */}
-          <div className=" w-[50%] company h-full md:flex hidden"></div>
+          <div
+            style={{
+              backgroundImage: "url(https://i.imgur.com/UpsPqUc.jpeg)",
+            }}
+            className=" w-[50%] h-full md:flex hidden bg-no-repeat bg-cover bg-top"
+          ></div>
         </div>
       </section>
 
@@ -136,7 +149,7 @@ const Inicio = () => {
           <Servicio
             titulo="ASESORIA"
             subtitulo="Asesoramos a nuestros clientes en finanzas corporativa, tributaria, laboral, además diseñamos estrategias corporativas a la medida."
-            icon={<Legales />}
+            icon={<FaHandsHelping />}
           />
           <Servicio
             titulo="SERVICIOS DE PLANILLA"
@@ -151,58 +164,45 @@ const Inicio = () => {
           <Servicio
             titulo="SERVICIOS LEGALES"
             subtitulo="Acompañamos al cliente en temas de asesoría jurídica y tramite legales."
-            icon={<Money />}
+            icon={<Legales />}
           />
           <Servicio
             titulo="INTERMEDIACION FINANCIERA"
             subtitulo="Asesoramos al cliente para obtención de líneas de créditos bancario u otros productos disponibles en la Banca actualmente. "
-            icon={<Money />}
+            icon={<FaMoneyBill />}
           />
           <Servicio
             titulo="OTROS SERVICIOS "
             subtitulo="Trámites ante entidades gubernamentales, servicios de domicilio fiscal para empresas en Panamá, y otros."
-            icon={<Money />}
+            icon={<MdMiscellaneousServices />}
           />
         </div>
       </section>
 
       {/* Porque nosotros--------------------------------------------------------------------------------------------------------------------------------------------- */}
-      <section className=" w-full md:h-[675px] sm:h-[850px] max-h-[1000px]  h-[280vw]  text-center relative sm:mt-[115px] mt-16">
-        <div className=" absolute w-full h-full bg-[#171717b2] z-40"></div>
-        {/* Imagen */}
-        <div className=" absolute w-full h-full columnas2 z-30 "></div>
-        {/* Container */}
-        <div className="  md:w-[96%] md:h-[87%] w-[95%] h-[95%]  border-[1px] border-[#696969] flex flex-col justify-center tracking-wide absolute z-40 fixedCenterXnY px-5">
-          {/* Subtitulo */}
-          <h2 className=" uppercase tracking-[3px] text-[#d3b380] poppins-bold text-[30px]">
-            Razones para elegirnos
-          </h2>
-          {/* Titulo */}
-          <h1 className="hidden text-white poppins-bold text-[30px] mt-2">
-            ¿Por qué los clientes nos eligen?
-          </h1>
-          <div className=" w-[1px] h-[35px] bg-[#e1c088] mx-auto my-4"></div>
-          {/* Parrafos */}
-          <div className="md:flex justify-center text-start gap-12">
-            {/* Parrafo */}
-            <div className="md:w-[500px] w-full text-[16px] text-[#bababa]  sm:mt-0 poppins-light md:text-start text-center">
+      <section
+        style={{
+          backgroundImage: "url(https://i.imgur.com/Mr6alDq.jpeg)",
+        }}
+        className="w-full min-h-[500px] bg-no-repeat bg-center bg-cover sm:mt-[115px] mt-16 flex"
+      >
+        <div className="flex-1 bg-[#000000c3] text-center py-20 px-4 flex justify-center items-center">
+          <div className="w-full">
+            {/* Subtitulo */}
+            <h2 className=" uppercase tracking-[3px] text-[#d3b380] poppins-bold text-[30px]">
+              Razones para elegirnos
+            </h2>
+            <div className=" w-[1px] h-[35px] bg-[#e1c088] mx-auto my-4"></div>
+            <div className=" grid sm:grid-cols-2 grid-cols-1 max-w-[1000px] mx-auto">
               <div className=" flex flex-col items-center  sm:mt-4 mt-4">
-                <div className=" poppins-bold text-white  text-[50px]">
-                  100%
-                </div>
-
-                <div className=" poppins-light text-[#d3b380] ">
+                <div className="poppins-bold text-white  text-[50px]">100%</div>
+                <div className="poppins-light text-[#d3b380] ">
                   Calidad Garantizada
                 </div>
               </div>
-            </div>
-
-            {/* Parrafo */}
-            <div className="md:w-[500px] w-full text-[16px] text-[#bababa]  mt-0 poppins-light md:text-start text-center">
-              <div className=" flex flex-col items-center sm:mt-0 mt-0">
-                <div className=" poppins-bold text-white  text-[50px]">30+</div>
-
-                <div className=" poppins-light text-[#d3b380] ">
+              <div className=" flex flex-col items-center  sm:mt-4 mt-4">
+                <div className="poppins-bold text-white  text-[50px]">30+</div>
+                <div className="poppins-light text-[#d3b380] ">
                   Años de Experiencia
                 </div>
               </div>

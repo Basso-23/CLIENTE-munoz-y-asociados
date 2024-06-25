@@ -51,9 +51,9 @@ const Navbar = () => {
     <main className="flex items-center bg-white h-[80px] fixed z-50 w-full shadow-md">
       <section className="flex max-w-[1250px] w-full mx-auto sm:px-10 px-5 py-2 justify-between ">
         {/* Nombre y logo--------------------------------------------------------------------------------------------------------------------------------------------- */}
-        <Link href={"/"} className=" flex  my-auto gap-0 uppercase">
+        <Link href={"/"} className=" flex my-auto gap-0 uppercase">
           {/* Logo */}
-          <div className="logo w-20 h-12"></div>
+          <div className="logo w-20 h-10"></div>
           {/* Nombre */}
           <div className=" my-auto pt-0 leading-[15px]">
             <div className=" poppins-bold tracking-wide text-[14px]">

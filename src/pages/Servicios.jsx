@@ -28,11 +28,7 @@ const Servicios = () => {
 
   const Opcion = ({ name, isActive, setIsActive }) => {
     return (
-      <LinkDiv
-        to="info"
-        smooth={true}
-        duration={700}
-        offset={-100}
+      <div
         onClick={() => {
           setIsActive(name);
           filterProject(name);
@@ -58,14 +54,19 @@ const Servicios = () => {
           <div> {name} </div>
         </div>
         <div className=" w-full h-[0.5px] bg-[#d0d0d0] mt-4"> </div>
-      </LinkDiv>
+      </div>
     );
   };
   return (
     <main className=" text-black mb-20">
       {/* Banner--------------------------------------------------------------------------------------------------------------------------------------------- */}
-      <section className=" w-full sm:h-[375px] h-[140px]  text-center columnas text-white">
-        <div className="  w-full h-full bg-[#0000009d] flex flex-col justify-center tracking-wider uppercase poppins-bold  ">
+      <section
+        style={{
+          backgroundImage: "url(https://i.imgur.com/yAybqda.jpeg)",
+        }}
+        className=" w-full sm:h-[375px] h-[140px]  text-center text-white bg-bottom bg-no-repeat bg-cover"
+      >
+        <div className="  w-full h-full bg-[#000000b6] flex flex-col justify-center tracking-wider uppercase poppins-bold  ">
           <h1 className=" md:text-[85px] text-[40px] uppercase poppins-bold tracking-[1px] leading-tight  ">
             Servicios
           </h1>

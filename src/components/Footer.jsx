@@ -21,7 +21,7 @@ const Footer = () => {
           {/* Nombre y logo--------------------------------------------------------------------------------------------------------------------------------------------- */}
           <Link href={"/"} className=" flex  my-auto gap-2 uppercase">
             {/* Logo */}
-            <div className="logo w-20 h-16 saturate-150"></div>
+            <div className="logo w-20 h-11 saturate-150"></div>
             {/* Nombre */}
             <div className=" my-auto pt-0 leading-[18px]">
               <div className=" poppins-bold tracking-widest text-[18px]">
