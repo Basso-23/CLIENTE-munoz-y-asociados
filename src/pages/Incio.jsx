@@ -43,7 +43,7 @@ const Inicio = () => {
       {/* Banner--------------------------------------------------------------------------------------------------------------------------------------------- */}
       <section
         style={{
-          backgroundImage: "url(https://i.imgur.com/c8v3GcV.jpeg)",
+          backgroundImage: "url(https://i.imgur.com/Mr6alDq.jpeg)",
         }}
         className=" w-full sm:h-[675px] h-[500px]  text-center bg-no-repeat bg-cover bg-center "
       >

@@ -107,7 +107,6 @@ const Navbar = () => {
                   <Nav_Mobile name="Inicio" url="/" />
                   <Nav_Mobile name="Nosotros" url="/Nosotros" />
                   <Nav_Mobile name="Servicios" url="/Servicios" />
-                  <Nav_Mobile name="Logros" url="/Logros" />
                   <Nav_Mobile name="Contacto" url="/Contacto" />
                 </div>
               </m.div>

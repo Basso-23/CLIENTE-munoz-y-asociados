@@ -131,14 +131,14 @@
 }
 
 .audits {
-  background-image: url(../assets/images/audits.webp);
+  background-image: url(../assets/images/audits.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
 }
 
 .impuestos {
-  background-image: url(../assets/images/impuestos.webp);
+  background-image: url(../assets/images/impuestos.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -173,14 +173,14 @@
 }
 
 .legal {
-  background-image: url(../assets/images/legal.webp);
+  background-image: url(../assets/images/legal.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .finance {
-  background-image: url(../assets/images/finance.webp);
+  background-image: url(../assets/images/finance.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

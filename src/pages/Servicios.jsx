@@ -9,12 +9,12 @@ import Link from "next/link";
 import { motion as m, AnimatePresence } from "framer-motion";
 
 const Servicios = () => {
-  const [isActive, setIsActive] = useState("Auditorías");
+  const [isActive, setIsActive] = useState("Auditoría");
   const [filtered, setFiltered] = useState(servicios);
 
   useEffect(() => {
     var filtered = servicios.filter(function (atribute) {
-      return atribute.title == "Auditorías";
+      return atribute.title == "Auditoría";
     });
     setFiltered(filtered);
   }, []);
@@ -81,12 +81,12 @@ const Servicios = () => {
         {/* Left--------------------------------------------------------------------------------------------------------------------------------------------- */}
         <div className=" xl:w-[340px] w-full xl:flex xl:flex-col grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 xl:justify-start justify-center gap-5">
           <Opcion
-            name={"Auditorías"}
+            name={"Auditoría"}
             isActive={isActive}
             setIsActive={setIsActive}
           />
           <Opcion
-            name={"Impuestos"}
+            name={"Impuesto"}
             isActive={isActive}
             setIsActive={setIsActive}
           />
@@ -96,13 +96,13 @@ const Servicios = () => {
             setIsActive={setIsActive}
           />
           <Opcion
-            name={"Asesorías"}
+            name={"Asesoría"}
             isActive={isActive}
             setIsActive={setIsActive}
           />
 
           <Opcion
-            name={"Servicios de Planilla"}
+            name={"Servicio de Planilla"}
             isActive={isActive}
             setIsActive={setIsActive}
           />

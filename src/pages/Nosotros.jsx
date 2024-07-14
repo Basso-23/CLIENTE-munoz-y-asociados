@@ -23,7 +23,7 @@ const Nosotros = () => {
       {/* Banner--------------------------------------------------------------------------------------------------------------------------------------------- */}
       <section
         style={{
-          backgroundImage: "url(https://i.imgur.com/0DqZ5k5.jpeg)",
+          backgroundImage: "url(https://i.imgur.com/leuub8W.jpeg)",
         }}
         className=" w-full sm:h-[375px] h-[140px]  text-center bg-center bg-no-repeat bg-cover"
       >
@@ -42,7 +42,7 @@ const Nosotros = () => {
           {/* Imagen */}
           <div
             style={{
-              backgroundImage: "url(https://i.imgur.com/KjBRO2Y.jpeg)",
+              backgroundImage: "url(https://i.imgur.com/4s80g8L.jpeg)",
             }}
             className=" w-full relative shadow-md overflow-hidden lg:flex hidden bg-top bg-no-repeat bg-cover"
           >
@@ -67,10 +67,7 @@ const Nosotros = () => {
                   Auditoria, Contabilidad, Legales y de Consultoría. La misma
                   está compuesta por Contadores Públicos Autorizados, Abogados u
                   Otros Profesionales, que ejercen en la actualidad en la
-                  República de Panamá. Mantenemos altos estándares de calidad e
-                  independencia profesional, lo cual nos ha permitido una gran
-                  acogida por parte de nuestros clientes tanto en los servicios
-                  de auditoría, contabilidad y consultoría.
+                  República de Panamá.
                 </h2>
                 {/* Subtitulo */}
                 <h2 className="text-[16px] text-[#474747]  mt-8 poppins-light text-justify">

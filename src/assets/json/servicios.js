@@ -7,13 +7,12 @@ const servicios = [
     contenido: [
       {
         tipo: "Constitución de Sociedades Anónimas",
-        descripcion:
-          "Servicio para establecer empresas con responsabilidad limitada y capital social dividido en acciones.",
+        descripcion: "Creación de sociedades anónimas.",
       },
       {
         tipo: "Constitución de Fundaciones de Interés Privado",
         descripcion:
-          "Ayuda en la creación de organizaciones sin fines de lucro, con propósitos específicos y patrimonio independiente.",
+          "Creación de Fundación de Interes Privado, con propósito específicos.",
       },
       {
         tipo: "Disolución de Sociedades",
@@ -123,7 +122,7 @@ const servicios = [
 
   {
     id: 2,
-    title: "Impuestos",
+    title: "Impuesto",
     subtitle: "Servicios Fiscales y Tributarios",
     image: "impuestos",
     contenido: [
@@ -160,7 +159,7 @@ const servicios = [
       {
         tipo: "Preparación y presentación de informe de compras e importaciones de bienes y servicios.",
         descripcion:
-          "Elaboración y presentación de informes detallados sobre compras e importaciones de bienes y servicios, relevantes para la determinación de impuestos.",
+          "Elaboración y presentación de informes detallados sobre compras e importaciones de bienes y servicios.",
       },
       {
         tipo: "Diagnóstico de impuestos",
@@ -233,7 +232,7 @@ const servicios = [
   },
   {
     id: 4,
-    title: "Asesorías",
+    title: "Asesoría",
     subtitle: "Asesoría Legal Integral",
     image: "asesoria",
     contenido: [
@@ -266,7 +265,7 @@ const servicios = [
   },
   {
     id: 5,
-    title: "Servicios de Planilla",
+    title: "Servicio de Planilla",
     subtitle: "Servicios de Nómina y Recursos Humanos",
     image: "planilla",
     contenido: [
@@ -288,12 +287,12 @@ const servicios = [
       {
         tipo: "Manejo de SIPE (C.S.S.)",
         descripcion:
-          "Administración de trámites y gestiones relacionadas con el Sistema de Ingreso y Permanencia (SIPE) de la Caja de Seguro Social (CSS).",
+          "Preparación y presentación de planilla mensual en la Plataforma del Sistema de Ingresos y Prestaciones Económicas (SIPE) de la Caja de Seguro Social.",
       },
       {
         tipo: "Preparación y presentación de Informe 03 de Planilla",
         descripcion:
-          "Elaboración y presentación del informe 03 de planilla ante las autoridades laborales, cumpliendo con los requisitos legales y reglamentarios.",
+          "Elaboración y presentación del informe 03 de planilla ante la DGI.",
       },
       {
         tipo: "Confección de Planillas Complementarias",
@@ -332,19 +331,19 @@ const servicios = [
   },
   {
     id: 7,
-    title: "Auditorías",
+    title: "Auditoría",
     subtitle: "Auditorías",
     image: "audits",
     contenido: [
       {
         tipo: "Auditoría de estados financieros",
         descripcion:
-          "Revisión exhaustiva de los estados financieros de una empresa para garantizar su precisión, integridad y conformidad con los principios contables y regulaciones pertinentes.",
+          "Auditoría externa de los estados financieros de una empresa para garantizar su precisión, integridad y conformidad con las Normas Internacionales de Auditoría y regulaciones pertinentes.",
       },
       {
-        tipo: "Revisión de estados financieros para bancos",
+        tipo: "Revisión de estados financieros",
         descripcion:
-          "Evaluación de los estados financieros de una empresa para verificar su exactitud y proporcionar una garantía a los bancos u otras instituciones financieras sobre la situación financiera de la empresa.",
+          "Evaluación de los estados financieros de una empresa para verificar su exactitud y proporcionar una garantía.",
       },
       {
         tipo: "Auditorías a sistemas de control interno",
@@ -397,7 +396,8 @@ const servicios = [
       },
       {
         tipo: "Obtención de líneas de crédito",
-        descripcion: "Gestión de créditos ante entidades financieras.",
+        descripcion:
+          "Acompañamiento al cliente para realizar la gestión de créditos ante entidades financieras.",
       },
       {
         tipo: "Proyección financiera para cuentas bancarias",
@@ -405,13 +405,13 @@ const servicios = [
           "Preparación de proyecciones financieras para apertura de cuentas.",
       },
       {
-        tipo: "Documentación de ingresos",
+        tipo: "Certificación de ingresos",
         descripcion:
-          "Documentación que valida ingresos para créditos bancarios.",
+          "Certificación que valida ingresos para créditos bancarios.",
       },
       {
-        tipo: "Documentación de depósitos",
-        descripcion: "Verificación de depósitos en instituciones financieras.",
+        tipo: "Certificación de depósitos",
+        descripcion: "Certificación de depósitos en instituciones financieras.",
       },
     ],
   },
@@ -454,7 +454,7 @@ const servicios = [
       {
         tipo: "Otros",
         descripcion:
-          "Servicios adicionales no especificados anteriormente, que pueden variar según las necesidades del cliente y la empresa que los ofrece.",
+          "Servicios adicionales no especificados anteriormente, que pueden variar según las necesidades del cliente.",
       },
     ],
   },

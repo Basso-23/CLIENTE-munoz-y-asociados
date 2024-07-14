@@ -38,12 +38,17 @@ const Footer = () => {
           himself transformed in his bed into.
         </div>
         <div className=" flex gap-4 text-[#B1976B]">
-          <Facebook />
-          <Instagram />
+          <a
+            target="_blank"
+            href="https://www.facebook.com/profile.php?id=61561887276214"
+          >
+            <Facebook />
+          </a>
+
+          {/*    <Instagram /> */}
         </div>
       </div>
 
-      {/* Subtitulo */}
       <div className="text-[16px] text-[#bababa] sm:max-w-[300px] w-full flex flex-col gap-5 justify-center">
         <div className="poppins-bold text-[18px] text-white">Contacto</div>
         <div>
